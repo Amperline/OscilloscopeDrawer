@@ -1,0 +1,5 @@
+E:/Projects/OscilocopeDrawer/OsclscpSim_panel/build/Debug/CMakeFiles/OsclscpSim_Panel.dir
+E:/Projects/OscilocopeDrawer/OsclscpSim_panel/build/Debug/CMakeFiles/edit_cache.dir
+E:/Projects/OscilocopeDrawer/OsclscpSim_panel/build/Debug/CMakeFiles/rebuild_cache.dir
+E:/Projects/OscilocopeDrawer/OsclscpSim_panel/build/Debug/CMakeFiles/OsclscpSim_Panel_autogen_timestamp_deps.dir
+E:/Projects/OscilocopeDrawer/OsclscpSim_panel/build/Debug/CMakeFiles/OsclscpSim_Panel_autogen.dir

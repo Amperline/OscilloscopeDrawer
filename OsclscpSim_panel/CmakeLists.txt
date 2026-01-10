@@ -1,0 +1,75 @@
+cmake_minimum_required(VERSION 3.16)
+set(CMAKE_CXX_STANDARD 17)
+
+include(${CMAKE_SOURCE_DIR}/CmakeConfigs/Cfg_compiler.cmake)
+include(${CMAKE_SOURCE_DIR}/CmakeConfigs/Cfg_definitions.cmake)
+message("CMAKE_PREFIX_PATH = ${CMAKE_PREFIX_PATH}")
+message("BOOST_DIR = ${BOOST_DIR}")
+project(${PROJECT_NAME})
+set(SYSTEM WIN32)
+
+file(GLOB MENUS_FILES
+    "${CMAKE_SOURCE_DIR}/src/Menus/*.cpp"
+)
+file(GLOB CONN_TX_RX
+    "${CMAKE_SOURCE_DIR}/src/ConnTxRx/*.cpp"
+)
+file(GLOB M_WINDOWS_FILES 
+    "${CMAKE_SOURCE_DIR}/src/m_windows/*.cpp"
+)
+file(GLOB U_WIDGETS
+    "${CMAKE_SOURCE_DIR}/src/UniqueWidgets/*.cpp"
+)
+file(GLOB LOGIC_C
+    "${CMAKE_SOURCE_DIR}/src/Logic_C/*.cpp"
+)
+
+set(SOURCE
+    src/main.cpp
+    #це для іконки
+    app.rc 
+
+    ${MENUS_FILES}
+    ${COM_PROTOCOLS_FI}
+    ${M_WINDOWS_FILES}
+    ${U_WIDGETS}
+    ${LOGIC_C}
+)
+
+set(HEADERS
+    
+)
+
+include_directories(
+    ${CMAKE_SOURCE_DIR}/headers/Menus
+    ${CMAKE_SOURCE_DIR}/headers/ConnTxRx
+    ${CMAKE_SOURCE_DIR}/headers/m_windows
+    ${CMAKE_SOURCE_DIR}/headers/UniqueWidgets
+    ${CMAKE_SOURCE_DIR}/headers/Logic_C
+)
+
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
+
+include_directories(${SFML_MAIN_DIR}/include)
+
+link_directories(${SFML_MAIN_DIR}/lib)
+add_executable(${PROJECT_NAME} ${SOURCE} ${HEADERS})
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${BOOST_DIR}
+)
+
+# set(CMAKE_EXE_LINKER_FLAGS "-static")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++ -static-libgcc")
+# target_link_options(${PROJECT_NAME} PRIVATE "-dynamic")
+target_link_libraries(${PROJECT_NAME} 
+    PRIVATE
+    ${ALL_LIBRARIES}
+    Qt6::Core Qt6::Widgets ws2_32 setupapi
+)
+
+include(${CMAKE_SOURCE_DIR}/CmakeConfigs/Cfg_dlls.cmake)
+
+# cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug ../..
+# make
+# ./OsclscpSim_Panel.exe
