@@ -11,8 +11,6 @@ osc::Oscilloscope(int height, int width, std::vector<double> signal_arr)
     this->width = width;
 
     this->s_arr = signal_arr;
-
-    
 }
 
 std::vector<double> osc::collect_Signal_Data(std::string path_to_Signal)
