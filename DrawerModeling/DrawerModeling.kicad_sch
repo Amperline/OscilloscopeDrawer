@@ -7961,6 +7961,16 @@
 		)
 		(uuid "49d38f8e-4e98-4d93-b3c6-762e553e3a3f")
 	)
+	(label "Їсть 5мА"
+		(at 168.91 110.49 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+			)
+			(justify left bottom)
+		)
+		(uuid "606acf9a-3232-4ed8-bbc9-3eab6fd0ae23")
+	)
 	(label "Відсікач напруги певної полярності."
 		(at 397.51 154.94 0)
 		(effects
@@ -8837,7 +8847,7 @@
 				)
 			)
 		)
-		(property "Value" "1000"
+		(property "Value" "4928"
 			(at 326.39 158.75 90)
 			(effects
 				(font
@@ -8905,7 +8915,7 @@
 				)
 			)
 		)
-		(property "Value" "100u"
+		(property "Value" "5n"
 			(at 304.8 163.83 90)
 			(effects
 				(font
