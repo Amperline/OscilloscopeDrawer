@@ -1,0 +1,33 @@
+LTspice 26.0.1 for Windows
+Circuit: E:\Projects\OscilocopeDrawer\Schemes\DraftOsclscpDrwrIntSupply.net
+Start Time: Mon Mar 30 21:38:08 2026
+Options:cshunt=1e-12 gminsteps=0 chgtol=1e-13 abstol=1n reltol=0.05 vntol=1m trtol=7 method=gear
+solver = Alternate
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = Gear
+abstol = 1e-09
+reltol = 0.05
+chgtol = 1e-13
+trtol = 7
+volttol = 0.001
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+Simulation stopped by user.
+Total elapsed time: 38.371 seconds.
+
+Files loaded:
+E:\Projects\OscilocopeDrawer\Schemes\DraftOsclscpDrwrIntSupply.net
+C:\Users\artem\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\artem\AppData\Local\LTspice\lib\cmp\standard.bjt
+C:\Users\artem\AppData\Local\LTspice\lib\sub\ADI1.lib
+C:\Users\artem\OneDrive\Документи\LTspice\lib\sub\TLP222A_2.sub.txt
+C:\Users\artem\AppData\Local\LTspice\lib\sub\LT1011.sub
+C:\Users\artem\AppData\Local\LTspice\lib\sub\LT1083.lib
+C:\Users\artem\AppData\Local\LTspice\lib\sub\LT3015.lib
+
