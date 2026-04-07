@@ -2,7 +2,7 @@ set(AVR_TOOLCHAIN "C:/Program Files (x86)/Atmel/AVR Studio 5.1/extensions/Atmel/
 
 # set(OUTPUT_DIR ${CMAKE_SOURCE_DIR}/build)
 set(ALL_LIBRARIES
-    "$ENV{LIBS_E}/studlib_AVR_atmega16/studlib_AVR_atmega16.a"
+    
 )
 
 # Налаштування заліза

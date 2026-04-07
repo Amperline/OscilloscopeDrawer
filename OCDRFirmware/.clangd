@@ -1,0 +1,7 @@
+CompileFlags:
+  Add:
+    - "--target=avr"
+    - "-isystem"
+    - "/home/viktor_amadeus/.local/opt/avr-gcc/avr/include"
+    - "-mmcu=atmega16"
+    - "-D__AVR_ATmega16__"
