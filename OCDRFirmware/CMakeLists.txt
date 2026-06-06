@@ -17,12 +17,22 @@ set(CMAKE_CXX_FLAGS "${AVR_FLAGS}")
 # Дуже важливо: лінкер теж має знати про -mmcu!
 set(CMAKE_EXE_LINKER_FLAGS "-mmcu=${MCU}") 
 
+file(C_INITS "${CMAKE_SOURCE_DIR}/src/init/*.c")
+
 # 4. Вихідні файли
-set(SOURCE src/main.c)
+set(SOURCE 
+    src/main.c
+    src/spi.c
+    src/lcd.c
+    src/globals.c
+    c_INITS
+)
+
 
 include_directories(
     ${AVR_TOOLCHAIN}/avr/include
     ${CMAKE_SOURCE_DIR}/headers
+    ${CMAKE_SOURCE_DIR}/headers/init
 )
 
 add_executable(${PROJECT_NAME}.elf ${SOURCE}) # Робимо розширення .elf для дебагу

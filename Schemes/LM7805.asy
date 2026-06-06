@@ -1,0 +1,17 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -96 -69 99 49
+WINDOW 0 5 75 Bottom 2
+WINDOW 3 2 -19 Top 2
+SYMATTR Value LM7805
+SYMATTR Prefix X
+SYMATTR ModelFile regulators.lib
+PIN -96 16 LEFT 8
+PINATTR PinName in
+PINATTR SpiceOrder 1
+PIN 0 -64 TOP 8
+PINATTR PinName gnd
+PINATTR SpiceOrder 2
+PIN 96 16 RIGHT 8
+PINATTR PinName out
+PINATTR SpiceOrder 3

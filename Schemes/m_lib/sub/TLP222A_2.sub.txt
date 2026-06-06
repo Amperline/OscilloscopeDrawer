@@ -1,0 +1,43 @@
+* Toshiba TLP222A-2 Dual Photorelay Model (Accurate & Fixed)
+* Datasheet: Vf=1.15V, Ift=3mA, Ron=2 Ohm, Coff=130pF
+* Pinout: 1=A1, 2=K1, 3=A2, 4=K2, 5=D2, 6=D2, 7=D1, 8=D1
+* Note: Output pins are polarity-free (AC/DC)
+.SUBCKT TLP222A_2 1 2 3 4 5 6 7 8
+* --- Channel 1 ---
+XU1 1 2 7 8 PHOTO_RELAY_CORE
+* --- Channel 2 ---
+XU2 3 4 5 6 PHOTO_RELAY_CORE
+.ENDS TLP222A_2
+
+* --- Internal Core Block ---
+.SUBCKT PHOTO_RELAY_CORE A K D1 D2
+* 1. Вхідний світлодіод (Vf = 1.15V @ 10mA)
+D_LED A K LED_MOD
+.model LED_MOD D(Is=1e-13 N=1.5 Rs=1.5 Cjo=30p)
+
+* 2. Керування затвором (Імітація фотовольтаїки)
+* Поріг спрацювання налаштовано на ~1.6mA
+G_DRIVE SOURCE GATE VALUE={ IF(I(D_LED) > 1.6m, 10u, 0) }
+
+* 3. Ланцюг затвора (швидкість перемикання ~0.5ms)
+R_GATE GATE SOURCE 2Meg
+C_GATE GATE SOURCE 200p
+D_CLAMP SOURCE GATE ZENER_10V
+.model ZENER_10V D(BV=10 Ibv=10u)
+
+* 4. Вихідні MOSFET-и (Back-to-Back)
+M1 D1 GATE SOURCE SOURCE NMOS_TLP
+M2 D2 GATE SOURCE SOURCE NMOS_TLP
+
+* 5. Вихідна ємність (паразитна ємність 130pF)
+C_OUT D1 D2 130p
+
+* 6. !!! FIX FOR FLOATING NODES !!!
+* Цей резистор (100 ГігаОм) з'єднує плаваючий витік із "світовою землею" (0).
+* Це не впливає на роботу ізоляції (надто великий опір), але LTspice
+* тепер бачить потенціал і не видає помилку.
+R_FIX_FLOAT SOURCE 0 100G
+
+* Параметри MOSFET (підігнані під Ron = 2 Ohm total)
+.model NMOS_TLP NMOS(Level=1 Vto=2.0 Kp=2.0 Rd=0.5 Rs=0.5)
+.ENDS PHOTO_RELAY_CORE

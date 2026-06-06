@@ -1,0 +1,35 @@
+PA0 - 
+PA1 -
+PA2 -
+PA3 -
+PA4 -
+PA5 -
+PA6 -
+PA7 -
+
+PB0 -
+PB1 -
+PB2 - waveshareDisplay: SD_CS
+PB3 - waveshareDisplay: TP_CS
+PB4 - waveshareDisplay: LCD_CS
+PB5 - waveshareDisplay: mosi
+PB6 - waveshareDisplay: miso
+PB7 - waveshareDisplay: sclk
+
+PC0 - 
+PC1 -
+PC2 -
+PC3 -
+PC4 - 
+PC5 -
+PC6 -
+PC7 - 
+
+PD0 - 
+PD1 -
+PD2 - waveshareDisplay: TP_IRQ
+PD3 -
+PD4 - waveshareDisplay: LCD_DC
+PD5 - form sin via PWM
+PD6 - waveshareDisplay: LCD_BL
+PD7 - 

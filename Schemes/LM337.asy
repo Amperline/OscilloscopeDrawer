@@ -1,0 +1,17 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -112 -81 81 33
+WINDOW 0 -16 32 Top 2
+WINDOW 3 -16 -32 Top 2
+SYMATTR Value LM337
+SYMATTR Prefix X
+SYMATTR ModelFile regulators.lib
+PIN -16 -80 TOP 8
+PINATTR PinName adj
+PINATTR SpiceOrder 1
+PIN 80 16 RIGHT 8
+PINATTR PinName out
+PINATTR SpiceOrder 2
+PIN -112 16 LEFT 8
+PINATTR PinName in
+PINATTR SpiceOrder 3

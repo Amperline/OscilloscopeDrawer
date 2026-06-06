@@ -1,0 +1,9 @@
+* Ideal transformer subcircuit
+* Pins: P1 P2 S1 S2
+.subckt MY_TRANSFORMER P1 P2 S1 S2
+
+Lpri P1 P2 {LPRI}
+Lsec S1 S2 {LSEC}
+K1 Lpri Lsec {K}
+
+.ends TEZ

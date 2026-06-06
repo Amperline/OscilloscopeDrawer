@@ -1,0 +1,23 @@
+LTspice 26.0.1 for Windows
+Circuit: E:\Projects\OscilocopeDrawer\Schemes\Draft4.net
+Start Time: Mon Jun  1 15:01:16 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+gmin = 1e-09
+reltol = 0.01
+bypass = true
+.OP point found by inspection.
+.OP point found by inspection.
+Total elapsed time: 1.170 seconds.
+
+Files loaded:
+E:\Projects\OscilocopeDrawer\Schemes\Draft4.net
+C:\Users\artem\AppData\Local\LTspice\lib\cmp\standard.bjt
+E:\Projects\OscilocopeDrawer\Schemes\m_lib\sub\ad633j.cir
+E:\Projects\OscilocopeDrawer\Schemes\m_lib\sub\lm13700.sub
+E:\Projects\OscilocopeDrawer\Schemes\m_lib\sub\TLP222A_2.sub.txt
+E:\Projects\OscilocopeDrawer\Schemes\m_lib\sub\TEZ.sub.txt
+
