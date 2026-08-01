@@ -1,18 +1,21 @@
-set(AVR_TOOLCHAIN "C:/Program Files (x86)/Atmel/AVR Studio 5.1/extensions/Atmel/AVRGCC/3.3.1.27/AVRToolchain")
+set (PROJECT_NAME "OscllscDrwr_firm")
 
-# set(OUTPUT_DIR ${CMAKE_SOURCE_DIR}/build)
+file(TO_CMAKE_PATH "$ENV{STM_COMPILER}" ARM_GNU_DIR )
+file(TO_CMAKE_PATH "$ENV{STM32F4}" STM_LIB_DIR)
+# замість set(ARM_GNU_DIR "$ENV{STM_COMPILER}")
+
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    set(OUTPUT_DIR ${CMAKE_SOURCE_DIR}/build/Debug)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0")
+
+elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
+    set(OUTPUT_DIR ${CMAKE_SOURCE_DIR}/build/Release)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2 -DNDEBUG")
+
+endif()
+
+set(CMAKE_EXE_LINKER_FLAGS "")
+set(CMAKE_SHARED_LINKER_FLAGS "")
+
 set(ALL_LIBRARIES
-    
 )
-
-# Налаштування заліза
-set(MCU atmega16)
-set(F_CPU 8000000UL)
-
-# 1. Налаштування крос-компіляції (ОБОВ'ЯЗКОВО ПЕРЕД project())
-set(CMAKE_SYSTEM_NAME Generic)      # Кажемо, що це не Windows/Linux, а "голе залізо"
-set(CMAKE_SYSTEM_PROCESSOR avr)
-
-# Це критично важливо! Змушує CMake перевіряти компілятор, створюючи
-# стат. бібліотеку, а не .exe. Це дозволяє уникнути помилок лінкера на етапі тесту.
-set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)

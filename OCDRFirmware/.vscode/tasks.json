@@ -1,39 +1,4 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Build Debug",
-        "type": "shell",
-        "command": "gcc",
-        "args": [
-          "-g",
-          "${workspaceFolder}/src/main.c",
-          "-o",
-          "${workspaceFolder}/build/Debug/${fileBasenameNoExtension}.exe"
-        ],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": ["$gcc"],
-        "detail": "Compile Debug build"
-      },
-      {
-        "label": "Build Release",
-        "type": "shell",
-        "command": "gcc",
-        "args": [
-          "-O2", // Оптимізація для продуктивності
-          "${workspaceFolder}/src/main.c",
-          "-o",
-          "${workspaceFolder}/build/Release/${fileBasenameNoExtension}.exe"
-        ],
-        "group": {
-          "kind": "build",
-          "isDefault": false
-        },
-        "problemMatcher": ["$gcc"],
-        "detail": "Compile Release build"
-      }
-    ]
-  }
+  "version": "2.0.0",
+  "tasks": []
+}

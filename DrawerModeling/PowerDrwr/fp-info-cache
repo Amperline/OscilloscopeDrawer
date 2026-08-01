@@ -1,4 +1,11 @@
-27220797906037194
+27224405046642248
+Audio_Module
+Arduino_LCD_Shield
+
+
+0
+28
+28
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -107904,6 +107911,13 @@ Varistor VF
 0
 2
 2
+VikLib
+TLP127
+
+
+0
+4
+4
 VikLib
 Без назви
 

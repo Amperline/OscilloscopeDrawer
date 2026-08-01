@@ -1,0 +1,4 @@
+E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/stm32f4_template.elf.dir
+E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/flash.dir
+E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/edit_cache.dir
+E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/rebuild_cache.dir

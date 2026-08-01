@@ -4,30 +4,27 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/headers/**",
-                "${env:AVR_TOOLCHAIN}/avr/include"
+                "${env:STM32F4}/Drivers/CMSIS/Core/Include",
+                "${env:STM32F4}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                "${env:STM32F4}/Drivers/STM32F4xx_HAL_Driver/Inc",
+                "${env:STM32F4}/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+                "${env:STM_COMPILER}/../arm-none-eabi/include",
+                "${env:STM_COMPILER}/../include/gdb",
+                "${workspaceFolder}/headers",
+                "${env:STM32F4}/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+                "${env:STM32F4}/Middlewares/Third_Party/FreeRTOS/Source/include"
+
             ],
             "defines": [
-                "__AVR_ATmega16__"
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "STM32F401xC",
+                "USE_HAL_DRIVER"
             ],
-            "compilerPath": "${env:AVR_TOOLCHAIN}/bin/avr-gcc.exe",
-            "cStandard": "c11",
+            "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-arm"
-        },
-        {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/headers"
-            ],
-            "defines": [
-                "__AVR_ATmega16__"
-            ],
-            "compilerPath": "/usr/bin/avr-gcc", 
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "linux-gcc-x86"
         }
     ],
     "version": 4

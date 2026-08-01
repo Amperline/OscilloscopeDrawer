@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: E:\Projects\OscilocopeDrawer\Schemes\DraftOsclscpDrwrIntSupply.net
-Start Time: Fri Jun  5 16:21:20 2026
+Start Time: Fri Jul 31 21:48:14 2026
 Options:cshunt=1e-12 gminsteps=0 chgtol=1e-13 abstol=1n reltol=0.05 vntol=1m trtol=7 method=gear
 solver = Normal
 Maximum thread count: 8
@@ -20,7 +20,7 @@ Source stepping succeeded in finding the operating point.
 
 
 Simulation stopped by user.
-Total elapsed time: 39.618 seconds.
+Total elapsed time: 83.190 seconds.
 
 Files loaded:
 E:\Projects\OscilocopeDrawer\Schemes\DraftOsclscpDrwrIntSupply.net

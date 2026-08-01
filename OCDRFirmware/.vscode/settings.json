@@ -2,7 +2,7 @@
     "terminal.integrated.env.windows": {
     "PATH": "${env:PATH}"
     },
-    "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+    "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
     "files.associations": {
         ".fantomasignore": "ignore",
         "iostream": "cpp",
@@ -83,7 +83,6 @@
         "xtr1common": "cpp",
         "xtree": "cpp",
         "xutility": "cpp",
-        "text_encoding": "cpp",
-        "graphics.h": "c"
+        "text_encoding": "cpp"
     }
 }
