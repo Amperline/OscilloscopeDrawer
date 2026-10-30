@@ -1,0 +1,59 @@
+cmake_minimum_required(VERSION 3.16)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+include(${CMAKE_SOURCE_DIR}/CmakeConfigs/Cfg_compiler.cmake)
+include(${CMAKE_SOURCE_DIR}/CmakeConfigs/Cfg_definitions.cmake)
+message("CMAKE_PREFIX_PATH = ${CMAKE_PREFIX_PATH}")
+message("BOOST_DIR = ${BOOST_DIR}")
+project(${PROJECT_NAME})
+set(SYSTEM WIN32)
+
+file(GLOB MENUS_FILES 
+    "${CMAKE_SOURCE_DIR}/src/Menus/*.cpp"
+)
+file(GLOB COM_PROTOCOLS_FILES 
+    "${CMAKE_SOURCE_DIR}/src/Com_protocols/*.cpp"
+)
+file(GLOB M_WINDOWS_FILES 
+    "${CMAKE_SOURCE_DIR}/src/m_windows/*.cpp"
+)
+
+set(SOURCE
+    src/main.cpp
+    src/drag_n_drop.cpp
+#це для іконки
+    app.rc
+
+    ${MENUS_FILES}
+    ${COM_PROTOCOLS_FILES}
+    ${M_WINDOWS_FILES}
+)
+
+set(HEADERS
+    headers/drag_n_drop.h
+)
+
+include_directories(
+    ${CMAKE_SOURCE_DIR}/headers/Menus
+    ${CMAKE_SOURCE_DIR}/headers/Com_protocols
+    ${CMAKE_SOURCE_DIR}/headers/m_windows
+    ${CMAKE_SOURCE_DIR}/headers
+)
+
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Charts)
+
+link_directories()
+add_executable(${PROJECT_NAME} ${SOURCE} ${HEADERS})
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${BOOST_DIR}
+)
+
+# set(CMAKE_EXE_LINKER_FLAGS "-static")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++ -static-libgcc")
+# target_link_options(${PROJECT_NAME} PRIVATE "-dynamic")
+target_link_libraries(${PROJECT_NAME} ${ALL_LIBRARIES}
+    PRIVATE Qt6::Core Qt6::Widgets Qt6::Charts ws2_32 setupapi
+)
+
+include(${CMAKE_SOURCE_DIR}/CmakeConfigs/Cfg_dlls.cmake)

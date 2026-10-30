@@ -1,0 +1,3 @@
+C:\msys64\mingw64\bin\cmake.exe -E rm -f CMakeFiles\Drawer_PANEL.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\Drawer_PANEL.dir/objects.a @CMakeFiles\Drawer_PANEL.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Drawer_PANEL.dir/objects.a -Wl,--no-whole-archive -o Drawer_PANEL.exe -Wl,--out-implib,libDrawer_PANEL.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Drawer_PANEL.dir\linkLibs.rsp

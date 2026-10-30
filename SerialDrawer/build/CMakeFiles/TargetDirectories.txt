@@ -1,0 +1,4 @@
+E:/Projects/OscilocopeDrawer/SerialDrawer/build/CMakeFiles/Drawer_PANEL.dir
+E:/Projects/OscilocopeDrawer/SerialDrawer/build/CMakeFiles/edit_cache.dir
+E:/Projects/OscilocopeDrawer/SerialDrawer/build/CMakeFiles/rebuild_cache.dir
+E:/Projects/OscilocopeDrawer/SerialDrawer/build/CMakeFiles/Drawer_PANEL_autogen.dir

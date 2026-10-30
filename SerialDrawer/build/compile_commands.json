@@ -1,0 +1,56 @@
+[
+{
+  "directory": "E:/Projects/OscilocopeDrawer/SerialDrawer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DDEBUG -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Drawer_PANEL.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Drawer_PANEL.dir\\Drawer_PANEL_autogen\\mocs_compilation.cpp.obj -c E:\\Projects\\OscilocopeDrawer\\SerialDrawer\\build\\Drawer_PANEL_autogen\\mocs_compilation.cpp",
+  "file": "E:/Projects/OscilocopeDrawer/SerialDrawer/build/Drawer_PANEL_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Drawer_PANEL.dir/Drawer_PANEL_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "E:/Projects/OscilocopeDrawer/SerialDrawer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DDEBUG -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Drawer_PANEL.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Drawer_PANEL.dir\\src\\main.cpp.obj -c E:\\Projects\\OscilocopeDrawer\\SerialDrawer\\src\\main.cpp",
+  "file": "E:/Projects/OscilocopeDrawer/SerialDrawer/src/main.cpp",
+  "output": "CMakeFiles/Drawer_PANEL.dir/src/main.cpp.obj"
+},
+{
+  "directory": "E:/Projects/OscilocopeDrawer/SerialDrawer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DDEBUG -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Drawer_PANEL.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Drawer_PANEL.dir\\src\\drag_n_drop.cpp.obj -c E:\\Projects\\OscilocopeDrawer\\SerialDrawer\\src\\drag_n_drop.cpp",
+  "file": "E:/Projects/OscilocopeDrawer/SerialDrawer/src/drag_n_drop.cpp",
+  "output": "CMakeFiles/Drawer_PANEL.dir/src/drag_n_drop.cpp.obj"
+},
+{
+  "directory": "E:/Projects/OscilocopeDrawer/SerialDrawer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DDEBUG -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Drawer_PANEL.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Drawer_PANEL.dir\\src\\Menus\\Menu_Start.cpp.obj -c E:\\Projects\\OscilocopeDrawer\\SerialDrawer\\src\\Menus\\Menu_Start.cpp",
+  "file": "E:/Projects/OscilocopeDrawer/SerialDrawer/src/Menus/Menu_Start.cpp",
+  "output": "CMakeFiles/Drawer_PANEL.dir/src/Menus/Menu_Start.cpp.obj"
+},
+{
+  "directory": "E:/Projects/OscilocopeDrawer/SerialDrawer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DDEBUG -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Drawer_PANEL.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Drawer_PANEL.dir\\src\\Menus\\Menu_Template.cpp.obj -c E:\\Projects\\OscilocopeDrawer\\SerialDrawer\\src\\Menus\\Menu_Template.cpp",
+  "file": "E:/Projects/OscilocopeDrawer/SerialDrawer/src/Menus/Menu_Template.cpp",
+  "output": "CMakeFiles/Drawer_PANEL.dir/src/Menus/Menu_Template.cpp.obj"
+},
+{
+  "directory": "E:/Projects/OscilocopeDrawer/SerialDrawer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DDEBUG -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Drawer_PANEL.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Drawer_PANEL.dir\\src\\Menus\\sub_menu_About.cpp.obj -c E:\\Projects\\OscilocopeDrawer\\SerialDrawer\\src\\Menus\\sub_menu_About.cpp",
+  "file": "E:/Projects/OscilocopeDrawer/SerialDrawer/src/Menus/sub_menu_About.cpp",
+  "output": "CMakeFiles/Drawer_PANEL.dir/src/Menus/sub_menu_About.cpp.obj"
+},
+{
+  "directory": "E:/Projects/OscilocopeDrawer/SerialDrawer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DDEBUG -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Drawer_PANEL.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Drawer_PANEL.dir\\src\\Menus\\sub_menu_NewConn.cpp.obj -c E:\\Projects\\OscilocopeDrawer\\SerialDrawer\\src\\Menus\\sub_menu_NewConn.cpp",
+  "file": "E:/Projects/OscilocopeDrawer/SerialDrawer/src/Menus/sub_menu_NewConn.cpp",
+  "output": "CMakeFiles/Drawer_PANEL.dir/src/Menus/sub_menu_NewConn.cpp.obj"
+},
+{
+  "directory": "E:/Projects/OscilocopeDrawer/SerialDrawer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DDEBUG -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Drawer_PANEL.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Drawer_PANEL.dir\\src\\Com_protocols\\ctrl_Module.cpp.obj -c E:\\Projects\\OscilocopeDrawer\\SerialDrawer\\src\\Com_protocols\\ctrl_Module.cpp",
+  "file": "E:/Projects/OscilocopeDrawer/SerialDrawer/src/Com_protocols/ctrl_Module.cpp",
+  "output": "CMakeFiles/Drawer_PANEL.dir/src/Com_protocols/ctrl_Module.cpp.obj"
+},
+{
+  "directory": "E:/Projects/OscilocopeDrawer/SerialDrawer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DDEBUG -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Drawer_PANEL.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Drawer_PANEL.dir\\src\\m_windows\\ConnWindow.cpp.obj -c E:\\Projects\\OscilocopeDrawer\\SerialDrawer\\src\\m_windows\\ConnWindow.cpp",
+  "file": "E:/Projects/OscilocopeDrawer/SerialDrawer/src/m_windows/ConnWindow.cpp",
+  "output": "CMakeFiles/Drawer_PANEL.dir/src/m_windows/ConnWindow.cpp.obj"
+}
+]

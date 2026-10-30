@@ -1,0 +1,22 @@
+LTspice 26.0.1 for Windows
+Circuit: E:\Projects\OscilocopeDrawer\Schemes\Draft1.net
+Start Time: Fri Oct  9 16:33:40 2026
+Options:cshunt=1e-12 gminsteps=0 chgtol=1e-13 abstol=1n reltol=0.05 vntol=1m trtol=7 method=gear
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = Gear
+abstol = 1e-09
+reltol = 0.05
+chgtol = 1e-13
+trtol = 7
+volttol = 0.001
+bypass = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.128 seconds.
+
+Files loaded:
+E:\Projects\OscilocopeDrawer\Schemes\Draft1.net
+C:\Users\artem\AppData\Local\LTspice\lib\sub\NE555.sub
+

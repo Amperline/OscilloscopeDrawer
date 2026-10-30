@@ -118,7 +118,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/stm32f4_template
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/OscllscDrwr_firm
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ld.exe
@@ -162,7 +162,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=stm32f4_template
+CMAKE_PROJECT_NAME:STATIC=OscllscDrwr_firm
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe
@@ -230,13 +230,13 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-stm32f4_template_BINARY_DIR:STATIC=E:/Projects/OscilocopeDrawer/OCDRFirmware/build
+OscllscDrwr_firm_BINARY_DIR:STATIC=E:/Projects/OscilocopeDrawer/OCDRFirmware/build
 
 //Value Computed by CMake
-stm32f4_template_IS_TOP_LEVEL:STATIC=ON
+OscllscDrwr_firm_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-stm32f4_template_SOURCE_DIR:STATIC=E:/Projects/OscilocopeDrawer/OCDRFirmware
+OscllscDrwr_firm_SOURCE_DIR:STATIC=E:/Projects/OscilocopeDrawer/OCDRFirmware
 
 
 ########################

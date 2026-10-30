@@ -37,10 +37,19 @@ file(GLOB TIMS
     "${CMAKE_SOURCE_DIR}/src/TIM/*.c"
 )
 
+file(GLOB COMMS
+    "${CMAKE_SOURCE_DIR}/src/comm/*.c"
+)
+
+file(GLOB M_GEN
+    "${CMAKE_SOURCE_DIR}/src/general/*.c"
+)
+
 set(SOURCE
     src/main.c
     src/stm32_assert.c
     src/stubs.c
+    src/def.c
 
     src/stm32f4xx_hal_timebase_tim.c
     src/system_stm32f4xx.c
@@ -52,11 +61,18 @@ set(SOURCE
     ${HAL_SOURCES}
     
     ${TIMS}
-
+    ${COMMS}
+    ${M_GEN}
+     
     ${FREE_RTOS_SOURCES}
     ${STM_LIB_DIR}/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
     ${STM_LIB_DIR}/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
     ${STM_LIB_DIR}/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
+
+    Drivers/Fonts/Fonts.c
+    Drivers/LCD/lcd_driver.c
+    Drivers/Touch/Touch.c
+    Drivers/XPT2046/XPT2046.c
 )
 
 set(HEADERS
@@ -68,6 +84,21 @@ set(HEADERS
     headers/TIM/TIM5.h
     headers/Error_Handler.h
     headers/FreeRTOSConfig.h
+    
+    headers/comm/i2c.h
+    headers/comm/spi.h
+    headers/comm/usart.h
+
+    headers/general/dotsEv.h
+    headers/general/tasks.h
+    headers/general/touchM.h
+    headers/general/DAC.h
+    headers/general/menu.h
+
+    Drivers/Fonts/Fonts.h
+    Drivers/LCD/lcd_driver.h
+    Drivers/Touch/Touch.h
+    Drivers/XPT2046/XPT2046.h
 )
 
 include_directories(
@@ -76,6 +107,7 @@ include_directories(
     ${STM_LIB_DIR}/Drivers/CMSIS/Device/ST/STM32F4xx/Include
     ${STM_LIB_DIR}/Drivers/STM32F4xx_HAL_Driver/Inc
     ${CMAKE_SOURCE_DIR}/headers
+    ${CMAKE_SOURCE_DIR}/Drivers
 
     ${STM_LIB_DIR}/Middlewares/Third_Party/FreeRTOS/Source/include
     ${STM_LIB_DIR}/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F

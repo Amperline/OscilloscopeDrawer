@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       The target system is: Generic -  - cortex-m4
       The host system is: Windows - 10.0.26200 - AMD64
@@ -15,7 +15,7 @@ events:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
       Compiler: C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe 
@@ -45,7 +45,7 @@ events:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe 
@@ -67,7 +67,7 @@ events:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
       Compiler: C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe 
@@ -97,7 +97,7 @@ events:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe 
@@ -118,7 +118,7 @@ events:
     backtrace:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
       arm-none-eabi-gcc.exe (GNU Tools for STM32 12.3.rel1.20240926-1715) 12.3.1 20230626
@@ -131,12 +131,12 @@ events:
     backtrace:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-7p6kus"
-      binary: "E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-7p6kus"
+      source: "E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-qicqyd"
+      binary: "E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-qicqyd"
     cmakeVariables:
       CMAKE_C_FLAGS: " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -g -O0"
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -145,13 +145,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-7p6kus'
+        Change Dir: 'E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-qicqyd'
         
-        Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/PROGRA~2/GnuWin32/bin/make.exe -f Makefile cmTC_3b73f/fast
-        C:/PROGRA~2/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_3b73f.dir/build.make CMakeFiles/cmTC_3b73f.dir/build
-        make.exe[1]: Entering directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-7p6kus'
-        Building C object CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj
-        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -g -O0    -v -o CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/PROGRA~2/GnuWin32/bin/make.exe -f Makefile cmTC_faceb/fast
+        C:/PROGRA~2/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_faceb.dir/build.make CMakeFiles/cmTC_faceb.dir/build
+        make.exe[1]: Entering directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-qicqyd'
+        Building C object CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj
+        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -g -O0    -v -o CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe
         Target: arm-none-eabi
@@ -159,8 +159,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 12.3.1 20230626 (GNU Tools for STM32 12.3.rel1.20240926-1715) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_3b73f.dir/'
-         C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi -D__USES_INITFINI__ C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3b73f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -g -O0 -version -o C:\\Users\\artem\\AppData\\Local\\Temp\\cc7EFdoj.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_faceb.dir/'
+         C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi -D__USES_INITFINI__ C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_faceb.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -g -O0 -version -o C:\\Users\\artem\\AppData\\Local\\Temp\\cctcfcqw.s
         GNU C17 (GNU Tools for STM32 12.3.rel1.20240926-1715) version 12.3.1 20230626 (arm-none-eabi)
         	compiled by GNU C version 7.3-win32 20180312, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -181,18 +181,18 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: f75cc1cc9726e4a7cf767d315894a73b
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_3b73f.dir/'
-         C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj C:\\Users\\artem\\AppData\\Local\\Temp\\cc7EFdoj.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_faceb.dir/'
+         C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj C:\\Users\\artem\\AppData\\Local\\Temp\\cctcfcqw.s
         GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (GNU Tools for STM32 12.3.rel1.20240926-1715) 2.40.0.20230627
         COMPILER_PATH=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.'
-        Linking C static library libcmTC_3b73f.a
-        C:/msys64/mingw64/bin/cmake.exe -P CMakeFiles/cmTC_3b73f.dir/cmake_clean_target.cmake
-        C:/msys64/mingw64/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_3b73f.dir/link.txt --verbose=1
-        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe qc libcmTC_3b73f.a CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj
-        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe libcmTC_3b73f.a
-        make.exe[1]: Leaving directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-7p6kus'
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_faceb.a
+        C:/msys64/mingw64/bin/cmake.exe -P CMakeFiles/cmTC_faceb.dir/cmake_clean_target.cmake
+        C:/msys64/mingw64/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_faceb.dir/link.txt --verbose=1
+        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe qc libcmTC_faceb.a CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj
+        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe libcmTC_faceb.a
+        make.exe[1]: Leaving directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-qicqyd'
         
       exitCode: 0
   -
@@ -200,7 +200,7 @@ events:
     backtrace:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -226,18 +226,18 @@ events:
     backtrace:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-7p6kus']
+        ignore line: [Change Dir: 'E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-qicqyd']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/PROGRA~2/GnuWin32/bin/make.exe -f Makefile cmTC_3b73f/fast]
-        ignore line: [C:/PROGRA~2/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_3b73f.dir/build.make CMakeFiles/cmTC_3b73f.dir/build]
-        ignore line: [make.exe[1]: Entering directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-7p6kus']
-        ignore line: [Building C object CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -g -O0    -v -o CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/PROGRA~2/GnuWin32/bin/make.exe -f Makefile cmTC_faceb/fast]
+        ignore line: [C:/PROGRA~2/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_faceb.dir/build.make CMakeFiles/cmTC_faceb.dir/build]
+        ignore line: [make.exe[1]: Entering directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-qicqyd']
+        ignore line: [Building C object CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -g -O0    -v -o CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe]
         ignore line: [Target: arm-none-eabi]
@@ -245,8 +245,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 12.3.1 20230626 (GNU Tools for STM32 12.3.rel1.20240926-1715) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_3b73f.dir/']
-        ignore line: [ C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi -D__USES_INITFINI__ C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3b73f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -g -O0 -version -o C:\\Users\\artem\\AppData\\Local\\Temp\\cc7EFdoj.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_faceb.dir/']
+        ignore line: [ C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi -D__USES_INITFINI__ C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_faceb.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -g -O0 -version -o C:\\Users\\artem\\AppData\\Local\\Temp\\cctcfcqw.s]
         ignore line: [GNU C17 (GNU Tools for STM32 12.3.rel1.20240926-1715) version 12.3.1 20230626 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -267,8 +267,8 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: f75cc1cc9726e4a7cf767d315894a73b]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_3b73f.dir/']
-        ignore line: [ C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj C:\\Users\\artem\\AppData\\Local\\Temp\\cc7EFdoj.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_faceb.dir/']
+        ignore line: [ C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj C:\\Users\\artem\\AppData\\Local\\Temp\\cctcfcqw.s]
         ignore line: [GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (GNU Tools for STM32 12.3.rel1.20240926-1715) 2.40.0.20230627]
         ignore line: [COMPILER_PATH=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/]
         ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/]
@@ -280,13 +280,13 @@ events:
         ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/]
         ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C static library libcmTC_3b73f.a]
-        ignore line: [C:/msys64/mingw64/bin/cmake.exe -P CMakeFiles/cmTC_3b73f.dir/cmake_clean_target.cmake]
-        ignore line: [C:/msys64/mingw64/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_3b73f.dir/link.txt --verbose=1]
-        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe qc libcmTC_3b73f.a CMakeFiles/cmTC_3b73f.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe libcmTC_3b73f.a]
-        ignore line: [make.exe[1]: Leaving directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-7p6kus']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-g' '-O0' '-v' '-o' 'CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_faceb.a]
+        ignore line: [C:/msys64/mingw64/bin/cmake.exe -P CMakeFiles/cmTC_faceb.dir/cmake_clean_target.cmake]
+        ignore line: [C:/msys64/mingw64/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_faceb.dir/link.txt --verbose=1]
+        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe qc libcmTC_faceb.a CMakeFiles/cmTC_faceb.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe libcmTC_faceb.a]
+        ignore line: [make.exe[1]: Leaving directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-qicqyd']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -300,12 +300,12 @@ events:
     backtrace:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-wszcej"
-      binary: "E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-wszcej"
+      source: "E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-z26usw"
+      binary: "E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-z26usw"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -315,13 +315,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-wszcej'
+        Change Dir: 'E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-z26usw'
         
-        Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/PROGRA~2/GnuWin32/bin/make.exe -f Makefile cmTC_8d425/fast
-        C:/PROGRA~2/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_8d425.dir/build.make CMakeFiles/cmTC_8d425.dir/build
-        make.exe[1]: Entering directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-wszcej'
-        Building CXX object CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj
-        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard    -v -o CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/PROGRA~2/GnuWin32/bin/make.exe -f Makefile cmTC_9e5f8/fast
+        C:/PROGRA~2/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_9e5f8.dir/build.make CMakeFiles/cmTC_9e5f8.dir/build
+        make.exe[1]: Entering directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-z26usw'
+        Building CXX object CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj
+        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard    -v -o CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe
         Target: arm-none-eabi
@@ -329,8 +329,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 12.3.1 20230626 (GNU Tools for STM32 12.3.rel1.20240926-1715) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_8d425.dir/'
-         C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi -D__USES_INITFINI__ C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8d425.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -version -o C:\\Users\\artem\\AppData\\Local\\Temp\\ccGwB1ZZ.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_9e5f8.dir/'
+         C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi -D__USES_INITFINI__ C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9e5f8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -version -o C:\\Users\\artem\\AppData\\Local\\Temp\\ccOAaOSU.s
         GNU C++17 (GNU Tools for STM32 12.3.rel1.20240926-1715) version 12.3.1 20230626 (arm-none-eabi)
         	compiled by GNU C version 7.3-win32 20180312, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -357,18 +357,18 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 31b4923d8738ffb0ecb934f4dbad1d0b
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_8d425.dir/'
-         C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\artem\\AppData\\Local\\Temp\\ccGwB1ZZ.s
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_9e5f8.dir/'
+         C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\artem\\AppData\\Local\\Temp\\ccOAaOSU.s
         GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (GNU Tools for STM32 12.3.rel1.20240926-1715) 2.40.0.20230627
         COMPILER_PATH=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX static library libcmTC_8d425.a
-        C:/msys64/mingw64/bin/cmake.exe -P CMakeFiles/cmTC_8d425.dir/cmake_clean_target.cmake
-        C:/msys64/mingw64/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_8d425.dir/link.txt --verbose=1
-        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe qc libcmTC_8d425.a CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj
-        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe libcmTC_8d425.a
-        make.exe[1]: Leaving directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-wszcej'
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX static library libcmTC_9e5f8.a
+        C:/msys64/mingw64/bin/cmake.exe -P CMakeFiles/cmTC_9e5f8.dir/cmake_clean_target.cmake
+        C:/msys64/mingw64/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_9e5f8.dir/link.txt --verbose=1
+        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe qc libcmTC_9e5f8.a CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj
+        C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe libcmTC_9e5f8.a
+        make.exe[1]: Leaving directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-z26usw'
         
       exitCode: 0
   -
@@ -376,7 +376,7 @@ events:
     backtrace:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -414,18 +414,18 @@ events:
     backtrace:
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:16 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-wszcej']
+        ignore line: [Change Dir: 'E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-z26usw']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/PROGRA~2/GnuWin32/bin/make.exe -f Makefile cmTC_8d425/fast]
-        ignore line: [C:/PROGRA~2/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_8d425.dir/build.make CMakeFiles/cmTC_8d425.dir/build]
-        ignore line: [make.exe[1]: Entering directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-wszcej']
-        ignore line: [Building CXX object CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard    -v -o CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/PROGRA~2/GnuWin32/bin/make.exe -f Makefile cmTC_9e5f8/fast]
+        ignore line: [C:/PROGRA~2/GnuWin32/bin/make.exe  -f CMakeFiles/cmTC_9e5f8.dir/build.make CMakeFiles/cmTC_9e5f8.dir/build]
+        ignore line: [make.exe[1]: Entering directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-z26usw']
+        ignore line: [Building CXX object CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard    -v -o CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe]
         ignore line: [Target: arm-none-eabi]
@@ -433,8 +433,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 12.3.1 20230626 (GNU Tools for STM32 12.3.rel1.20240926-1715) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_8d425.dir/']
-        ignore line: [ C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi -D__USES_INITFINI__ C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8d425.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -version -o C:\\Users\\artem\\AppData\\Local\\Temp\\ccGwB1ZZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_9e5f8.dir/']
+        ignore line: [ C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi -D__USES_INITFINI__ C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9e5f8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlibarch=armv7e-m+fp -march=armv7e-m+fp -version -o C:\\Users\\artem\\AppData\\Local\\Temp\\ccOAaOSU.s]
         ignore line: [GNU C++17 (GNU Tools for STM32 12.3.rel1.20240926-1715) version 12.3.1 20230626 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -461,8 +461,8 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 31b4923d8738ffb0ecb934f4dbad1d0b]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_8d425.dir/']
-        ignore line: [ C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\artem\\AppData\\Local\\Temp\\ccGwB1ZZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_9e5f8.dir/']
+        ignore line: [ C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m+fp -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\artem\\AppData\\Local\\Temp\\ccOAaOSU.s]
         ignore line: [GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (GNU Tools for STM32 12.3.rel1.20240926-1715) 2.40.0.20230627]
         ignore line: [COMPILER_PATH=C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/]
         ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/]
@@ -474,13 +474,13 @@ events:
         ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/]
         ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX static library libcmTC_8d425.a]
-        ignore line: [C:/msys64/mingw64/bin/cmake.exe -P CMakeFiles/cmTC_8d425.dir/cmake_clean_target.cmake]
-        ignore line: [C:/msys64/mingw64/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_8d425.dir/link.txt --verbose=1]
-        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe qc libcmTC_8d425.a CMakeFiles/cmTC_8d425.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe libcmTC_8d425.a]
-        ignore line: [make.exe[1]: Leaving directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-wszcej']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-v' '-o' 'CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX static library libcmTC_9e5f8.a]
+        ignore line: [C:/msys64/mingw64/bin/cmake.exe -P CMakeFiles/cmTC_9e5f8.dir/cmake_clean_target.cmake]
+        ignore line: [C:/msys64/mingw64/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_9e5f8.dir/link.txt --verbose=1]
+        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe qc libcmTC_9e5f8.a CMakeFiles/cmTC_9e5f8.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe libcmTC_9e5f8.a]
+        ignore line: [make.exe[1]: Leaving directory `E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles/CMakeScratch/TryCompile-z26usw']
         ignore line: []
         ignore line: []
         implicit libs: []

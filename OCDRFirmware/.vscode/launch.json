@@ -4,7 +4,7 @@
     {
       "name": "Debug STM32F401CCU",
       "cwd": "${workspaceFolder}",
-      "executable": "${workspaceFolder}/build/Debug/stm32f4_template.elf",
+      "executable": "${workspaceFolder}/build/OscllscDrwr_firm.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "stlink",

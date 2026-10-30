@@ -12,7 +12,8 @@
                 "${env:STM_COMPILER}/../include/gdb",
                 "${workspaceFolder}/headers",
                 "${env:STM32F4}/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
-                "${env:STM32F4}/Middlewares/Third_Party/FreeRTOS/Source/include"
+                "${env:STM32F4}/Middlewares/Third_Party/FreeRTOS/Source/include",
+                "${env:STM_COMPILER}/arm-none-eabi/include"
 
             ],
             "defines": [

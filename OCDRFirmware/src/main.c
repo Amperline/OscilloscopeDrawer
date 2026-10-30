@@ -1,62 +1,179 @@
+#include "Error_Handler.h"
+#include "TIM/TIM3.h"
+#include "Touch/Touch.h"
+#include "comm/spi.h"
+#include "general/tasks.h"
+#include "projdefs.h"
 #include "stm32f401xc.h"
 #include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal_cortex.h"
 #include "stm32f4xx_hal_gpio.h"
 #include "stm32f4xx_hal_gpio_ex.h"
+#include "stm32f4xx_hal_i2c.h"
 #include "stm32f4xx_hal_rcc.h"
 #include "def.h"
 #include "FreeRTOS.h"
 #include "stm32f4xx_hal_def.h"
+#include "stm32f4xx_hal_tim.h"
 #include "task.h"
 #include "TIM/TIM5.h"
+#include "comm/i2c.h"
+#include <stdint.h>
+#include <sys/_types.h>
+#include "general/dotsEv.h"
+#include "LCD/lcd_driver.h"
+#include "general/touchM.h"
+#include "general/DAC.h"
 
-
+#include "general/menu.h"
 void SystemClock_Config(void);
 void GPIO_Init(void);
+void Values_Init(void);
 
-int main() {
-    HAL_Init();
-    SystemClock_Config();
-    GPIO_Init();
+const u_int16_t time_per_div[2] = {
+    1,
+    10
+};
 
-
-
-    
-
-    
-    while (1) {
-        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13); // Toggle the LED pin
-        HAL_Delay(500); // Delay for 
-        // 500 milliseconds                  // 5. Затримка 500 мс
+void setVoltageBack()
+{
+    while(1)
+    {
+        setVoltage(0);
+        vTaskDelay(pdMS_TO_TICKS(1));
     }
 }
 
+osMutexDef(spiMutex);
+osMutexDef(dotsMutex);
+osMutexDef(syncMutex);
+
+int main(void) {
+    HAL_Init();
+
+    //System clock config
+    SystemClock_Config();
+    //init array of pwm OCR values for sin
+    Generate_Sine_LUT();
+    //init remaining pins
+    GPIO_Init();
+
+
+    HAL_NVIC_SetPriority(EXTI15_10_IRQn, 5, 0); 
+    HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+
+
+    HAL_NVIC_SetPriority(EXTI3_IRQn, 5, 0);
+    HAL_NVIC_EnableIRQ(EXTI3_IRQn);
+
+    SPI_Init();
+
+    HAL_Delay(100);
+    //Resp for alternating PWM for sin
+    TIM5_Init();
+    //resp for DAC
+    TIM3_Init();
+
+    lcd_init();
+    setRotation(1);
+    tp_init();
+
+    lcd_clear_screen(0xFFFF); // Білий фон
+    uint8_t msg1[] = {"WAITING FOR TOUCH..."};
+    lcd_display_string(40, 100, msg1, 16, 0x0000); // Чорний текст
+    draw_Menu();
+
+    // for(uint16_t i = 0; i < H_dots; i++)
+    // {
+        
+    //     for(uint16_t j = 0; j < V_dots; j++)
+    //     {
+    //         ImageArr[i][j] = 1;
+    //     }
+    // }
+    // dots_are_evaluated = 0;
+
+    //tp_adjust();
+    HAL_TIM_PWM_Start(&htim5, TIM_CHANNEL_1);
+    HAL_NVIC_SetPriority(TIM5_IRQn, 0, 0);
+    //Enable interrupt in core
+    HAL_NVIC_EnableIRQ(TIM5_IRQn);
+    //Enable interrupt
+    __HAL_TIM_ENABLE_IT(&htim5, TIM_IT_UPDATE);
+
+    HAL_NVIC_SetPriority(TIM3_IRQn, 6, 0);
+    //Enable interrupt in core
+    HAL_NVIC_EnableIRQ(TIM3_IRQn);
+    //Enable interrupt
+    __HAL_TIM_ENABLE_IT(&htim3, TIM_IT_UPDATE);
+    HAL_TIM_Base_Start_IT(&htim3);
+
+    spiMutexHandle = osMutexCreate(osMutex(spiMutex));
+    dotsArrMutexHandle = osMutexCreate(osMutex(dotsMutex));
+    syncMutexHandle = osMutexCreate(osMutex(syncMutex));
+
+    //xTaskCreate(setVoltageBack, "Voltage to 0", 256, NULL, 2, NULL);
+    xTaskCreate(checkOnSync, "Check on  sync", 128, NULL, 2, NULL);
+    xTaskCreate(checkDotsEvaluation, "Dots evaluation", 256, NULL, 2, NULL);
+    xTaskCreate(checkOnTouch, "Touch check", 512, NULL, 3, NULL);
+    xTaskCreate(c_DrawPoint, "Touch draw", 512, NULL, 4, NULL);
+    xTaskCreate(dacPerform, "DAC Update", 512, NULL, 10, &dacTaskHandle);
+    vTaskStartScheduler();
+
+    Error_Handler();
+
+}
+
 void SystemClock_Config(void) {
-  //Вмикаємо тактування блоку живлення (PWR)
-  //Налаштовуємо масштабування напруги: для стабільної 
-  //роботи на певній частоті
     __HAL_RCC_PWR_CLK_ENABLE();
     __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
 
-    RCC_OscInitTypeDef RCC_OscInitStruct;
-    RCC_ClkInitTypeDef RCC_ClkInitStruct;
-    //Вмикаємо внутрішній генератор HSE
-    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-    RCC_OscInitStruct.HSIState = RCC_HSE_ON;
-    //RCC_OscInitStruct.HSICalibrationValue
+    RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+    RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-    // PLLM	  Дільник на вході PLL	    16 (HSI/16 = 1 МГц)
-    // PLLN	  Множник для VCO	          336 (1×336 = 336 МГц)
-    // PLLP	  Дільник для SYSCLK (CPU)	/4 (336 / 4 = 84 МГц)
-    // PLLQ	  Дільник для USB/SDIO/RNG	/7 (336 / 7 = ~48 МГц)
-
+    // =========================================================================
+    // ВАРІАНТ 1: Робота від внутрішнього генератора HSI (16 МГц) -> PLL 84 МГц
+    // =========================================================================
+    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+    RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+    RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+    
     RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-    RCC_OscInitStruct.PLL.PLLM = 8;
+    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+    // HSI = 16 МГц. 
+    // 16 / 16 (PLLM) = 1 МГц. 
+    // 1 * 336 (PLLN) = 336 МГц. 
+    // 336 / 4 (PLLP) = 84 МГц для SYSCLK
+    RCC_OscInitStruct.PLL.PLLM = 16; 
     RCC_OscInitStruct.PLL.PLLN = 336;
     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV4;
     RCC_OscInitStruct.PLL.PLLQ = 7;
-    HAL_RCC_OscConfig(&RCC_OscInitStruct);
 
+    // =========================================================================
+    // ВАРІАНТ 2 (ЗАКОМЕНТОВАНИЙ): Робота від зовнішнього кварцу HSE (наприклад, 8 МГц)
+    // =========================================================================
+    /*
+
+    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+    RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+    
+    RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+    // HSE = 8 МГц. 
+    // 8 / 8 (PLLM) = 1 МГц. 1 * 336 = 336. 336 / 4 = 84 МГц.
+    RCC_OscInitStruct.PLL.PLLM = 8; 
+    RCC_OscInitStruct.PLL.PLLN = 336;
+    RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV4;
+    RCC_OscInitStruct.PLL.PLLQ = 7;
+    */
+    // =========================================================================
+
+    // Застосовуємо налаштування осцилятора
+    if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+        while(1); // Зависаємо тут, якщо помилка (краще, ніж мовчазний збій)
+    }
+
+    // Налаштовуємо шини та тактування периферії
     RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
                                 | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
     RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
@@ -64,145 +181,92 @@ void SystemClock_Config(void) {
     RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
     RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-    // STM32 флеш-пам'ять має затримку (wait states).
-    // Для 84 МГц потрібно FLASH_LATENCY_2 (2 такти).
-    HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2);
+    // Для 84 МГц потрібна затримка флеш-пам'яті у 2 такти (FLASH_LATENCY_2)
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
+        while(1);
+    }
 }
 
 void GPIO_Init(void) {
-    // Макрос, який вмикає тактування для порту GPIOC через RCC.
-    __HAL_RCC_GPIOB_CLK_ENABLE();
+    // 1. Обов'язково вмикаємо тактування для ВСІХ використовуваних портів
+    __HAL_RCC_GPIOD_CLK_ENABLE();
     __HAL_RCC_GPIOA_CLK_ENABLE();
+    __HAL_RCC_GPIOC_CLK_ENABLE();
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+    __HAL_RCC_SPI1_CLK_ENABLE();
 
-//////////PORT B
-    #define _TP_IRQ_PIN GPIO_PIN_12
 
-    GPIO_InitTypeDef gpio_LCD_DC = {0};
-    HAL_GPIO_WritePin(GPIOB, _LCD_DC_PIN, GPIO_PIN_RESET);
-    gpio_LCD_DC.Pin = _LCD_DC_PIN;
-    gpio_LCD_DC.Mode = GPIO_MODE_OUTPUT_PP;
-    gpio_LCD_DC.Pull = GPIO_PULLDOWN;
-    gpio_LCD_DC.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpio_LCD_DC.Alternate = GPIO_AF2_TIM5;
-    HAL_GPIO_Init(GPIOB, &gpio_LCD_DC);
+    // ========================================
+    // PORT B
+    // ========================================
 
-    GPIO_InitTypeDef gpio_LCD_CS = {0};
-    HAL_GPIO_WritePin(GPIOB, _LCD_CS_PIN, GPIO_PIN_RESET);
-    gpio_LCD_CS.Pin = _LCD_DC_PIN;
-    gpio_LCD_CS.Mode = GPIO_MODE_OUTPUT_PP;
-    gpio_LCD_CS.Pull = GPIO_PULLDOWN;
-    gpio_LCD_CS.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpio_LCD_CS.Alternate = GPIO_AF2_TIM5;
-    HAL_GPIO_Init(GPIOB, &gpio_LCD_CS);
 
-    GPIO_InitTypeDef gpio_TP_CS = {0};
-    HAL_GPIO_WritePin(GPIOB, _TP_CS_PIN, GPIO_PIN_RESET);
-    gpio_TP_CS.Pin = _TP_CS_PIN;
-    gpio_TP_CS.Mode = GPIO_MODE_AF_PP;
-    gpio_TP_CS.Pull = GPIO_PULLDOWN;
-    gpio_TP_CS.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpio_TP_CS.Alternate = GPIO_AF2_TIM5;
-    HAL_GPIO_Init(GPIOB, &gpio_TP_CS);
 
-    GPIO_InitTypeDef gpio_SD_CS = {0};
-    HAL_GPIO_WritePin(GPIOB, _SD_CS_PIN, GPIO_PIN_RESET);
-    gpio_SD_CS.Pin = _SD_CS_PIN;
-    gpio_SD_CS.Mode = GPIO_MODE_AF_PP;
-    gpio_SD_CS.Pull = GPIO_PULLDOWN;
-    gpio_SD_CS.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpio_SD_CS.Alternate = GPIO_AF2_TIM5;
-    HAL_GPIO_Init(GPIOB, &gpio_SD_CS);
+    // ========================================
+    // PORT A
+    // ========================================
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    // PWM (PA0)
+    GPIO_InitStruct.Pin = _PWM_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF2_TIM5;
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-    GPIO_InitTypeDef gpio_SCL = {0};
-    HAL_GPIO_WritePin(GPIOB, _SCL_PIN, GPIO_PIN_RESET);
-    gpio_SCL.Pin = _SCL_PIN;
-    gpio_SCL.Mode = GPIO_MODE_AF_PP;
-    gpio_SCL.Pull = GPIO_NOPULL;
-    gpio_SCL.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpio_SCL.Alternate = GPIO_AF4_I2C1;
-    HAL_GPIO_Init(GPIOB, &gpio_SCL);
 
-    GPIO_InitTypeDef gpio_SDA = {0};
-    HAL_GPIO_WritePin(GPIOB, _SDA_PIN, GPIO_PIN_RESET);
-    gpio_SDA.Pin = _SDA_PIN;
-    gpio_SDA.Mode = GPIO_MODE_AF_PP;
-    gpio_SDA.Pull = GPIO_NOPULL;
-    gpio_SDA.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpio_SDA.Alternate = GPIO_AF4_I2C1;
-    HAL_GPIO_Init(GPIOB, &gpio_SDA);
-
-    GPIO_InitTypeDef gpio_TP_IRQ = {0};
-    HAL_GPIO_WritePin(GPIOB, _TP_IRQ_PIN, GPIO_PIN_RESET);
-    gpio_TP_IRQ.Pin = _TP_IRQ_PIN;
-    gpio_TP_IRQ.Mode = GPIO_MODE_OUTPUT_PP;
-    gpio_TP_IRQ.Pull = GPIO_PULLDOWN;
-    gpio_TP_IRQ.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    HAL_GPIO_Init(GPIOB, &gpio_TP_IRQ);
-
-//////////PORT A
-    GPIO_InitTypeDef gpioPWM = {0};
-    HAL_GPIO_WritePin(GPIOA, _PWM_PIN, GPIO_PIN_RESET);
-    gpioPWM.Pin = _PWM_PIN;
-    gpioPWM.Mode = GPIO_MODE_AF_PP;
-    gpioPWM.Pull = GPIO_PULLDOWN;
-    gpioPWM.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpioPWM.Alternate = GPIO_AF2_TIM5;
-    HAL_GPIO_Init(GPIOA, &gpioPWM);
-
-    GPIO_InitTypeDef gpioSCLK = {0};
-    HAL_GPIO_WritePin(GPIOA, _SCLK_PIN, GPIO_PIN_RESET);
-    gpioSCLK.Pin = _SCLK_PIN;
-    gpioSCLK.Mode = GPIO_MODE_AF_PP;
-    gpioSCLK.Pull = GPIO_PULLDOWN;
-    gpioSCLK.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpioSCLK.Alternate = GPIO_AF5_SPI1;
-    HAL_GPIO_Init(GPIOA, &gpioSCLK);
-
-    GPIO_InitTypeDef gpioMISO = {0};
-    HAL_GPIO_WritePin(GPIOA, _MISO_PIN, GPIO_PIN_RESET);
-    gpioMISO.Pin = _MISO_PIN;
-    gpioMISO.Mode = GPIO_MODE_AF_PP;
-    gpioMISO.Pull = GPIO_NOPULL;
-    gpioMISO.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpioMISO.Alternate = GPIO_AF5_SPI1;
-    HAL_GPIO_Init(GPIOA, &gpioMISO);
-
-    GPIO_InitTypeDef gpioMOSI = {0};
-    HAL_GPIO_WritePin(GPIOA, _MOSI_PIN, GPIO_PIN_RESET);
-    gpioMOSI.Pin = _MOSI_PIN;
-    gpioMOSI.Mode = GPIO_MODE_AF_PP;
-    gpioMOSI.Pull = GPIO_NOPULL;
-    gpioMOSI.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpioMOSI.Alternate = GPIO_AF5_SPI1;
-    HAL_GPIO_Init(GPIOA, &gpioMISO);
-
-    GPIO_InitTypeDef gpioUSART_TX = {0};
-    HAL_GPIO_WritePin(GPIOA, _TX_PIN, GPIO_PIN_RESET);
-    gpioUSART_TX.Pin = _TX_PIN;
-    gpioUSART_TX.Mode = GPIO_MODE_AF_PP;
-    gpioUSART_TX.Pull = GPIO_NOPULL;
-    gpioUSART_TX.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpioUSART_TX.Alternate = GPIO_AF5_SPI1;
-    HAL_GPIO_Init(GPIOA, &gpioUSART_TX);
-
-    GPIO_InitTypeDef gpioUSART_RX = {0};
-    HAL_GPIO_WritePin(GPIOA, _RX_PIN, GPIO_PIN_RESET);
-    gpioUSART_RX.Pin = _RX_PIN;
-    gpioUSART_RX.Mode = GPIO_MODE_AF_PP;
-    gpioUSART_RX.Pull = GPIO_NOPULL;
-    gpioUSART_RX.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    gpioUSART_RX.Alternate = GPIO_AF5_SPI1;
-    HAL_GPIO_Init(GPIOA, &gpioUSART_RX);
+    // USART1 піни (TX, RX) — USART1 це AF7
+    GPIO_InitStruct.Pin = _TX_PIN | _RX_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF7_USART1; 
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
     
-    GPIO_InitTypeDef gpioFRONT_SYNC = {0};
-    HAL_GPIO_WritePin(GPIOA, _FRONT_SYNC_IRQ_PIN, GPIO_PIN_RESET);
-    gpioFRONT_SYNC.Pin = _FRONT_SYNC_IRQ_PIN;
-    gpioFRONT_SYNC.Mode = GPIO_MODE_INPUT;
-    gpioFRONT_SYNC.Pull = GPIO_NOPULL;
-    gpioFRONT_SYNC.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    HAL_GPIO_Init(GPIOA, &gpioFRONT_SYNC);
+    // Front Sync IRQ
+    GPIO_InitStruct.Pin = _FRONT_SYNC_IRQ_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+    GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+    HAL_GPIO_Init(_FRONT_SYNC_IRQ_Port, &GPIO_InitStruct);
+
+    // SPI1 піни (SCLK, MISO, MOSI)
+    GPIO_InitStruct.Pin = _SCLK_PIN | _MISO_PIN | _MOSI_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 
+    /*Configure GPIO pin Output Level */
+    HAL_GPIO_WritePin(LCD_DC_GPIO_Port, LCD_DC_Pin, GPIO_PIN_SET);
+    /*Configure GPIO pin Output Level */
+    HAL_GPIO_WritePin(GPIOB, SD_CS_Pin|XPT2046_CS_Pin|LCD_CS_Pin, GPIO_PIN_SET);
 
-    
+
+    /*Configure GPIO pin : PtPin */
+    GPIO_InitStruct.Pin = LCD_DC_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
+    HAL_GPIO_Init(LCD_DC_GPIO_Port, &GPIO_InitStruct);
+
+    /*Configure GPIO pin : PtPin */
+    GPIO_InitStruct.Pin = XPT2046_IRQ_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    HAL_GPIO_Init(XPT2046_IRQ_GPIO_Port, &GPIO_InitStruct);
+
+    /*Configure GPIO pins : PBPin PBPin PBPin */
+    GPIO_InitStruct.Pin = SD_CS_Pin|XPT2046_CS_Pin|LCD_CS_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = GPIO_PIN_6 | GPIO_PIN_7;
+    GPIO_InitStruct.Mode = GPIO_MODE_ANALOG; 
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 }

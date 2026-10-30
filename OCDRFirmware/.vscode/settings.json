@@ -2,7 +2,7 @@
     "terminal.integrated.env.windows": {
     "PATH": "${env:PATH}"
     },
-    "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
+    "C_Cpp.default.compilerPath": "",
     "files.associations": {
         ".fantomasignore": "ignore",
         "iostream": "cpp",
@@ -84,5 +84,9 @@
         "xtree": "cpp",
         "xutility": "cpp",
         "text_encoding": "cpp"
-    }
+    },
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--query-driver=**/*arm-none-eabi-g*"
+    ]
 }

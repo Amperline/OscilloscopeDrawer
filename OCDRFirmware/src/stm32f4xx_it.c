@@ -18,8 +18,16 @@
 /* USER CODE END Header */
 
 
+#include "TIM/TIM3.h"
+#include "comm/i2c.h"
+#include "stm32f401xc.h"
 #include "stm32f4xx_hal.h"
-
+#include "def.h"
+#include "math.h"
+#include "stm32f4xx_hal_gpio.h"
+#include "stm32f4xx_hal_tim.h"
+#include <stdint.h>
+#include <sys/types.h>
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
@@ -193,10 +201,96 @@ __attribute__((weak)) void SysTick_Handler(void)
   /* USER CODE END SysTick_IRQn 1 */
 }
 
-// void TIM5_IRQHandler(void)
+#include "TIM/TIM5.h"
+
+void TIM5_IRQHandler(void)
+{
+  // Оновлюємо регістр порівняння значенням з масиву
+  __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_1, sine_arr[lut_index]);
+  
+  // Рухаємось по масиву
+  lut_index++;
+  if(lut_index >= 400) 
+  {
+      lut_index = 0; // Починаємо новий період
+  }
+
+  // Очищення прапорів та виклик колбеків HAL
+  HAL_TIM_IRQHandler(&htim5);
+}
+
+
+
+// #include "general/dotsEv.h"
+
+// uint8_t currSection = 0;
+// uint16_t currentDot = 0;
+
+// void TIM3_IRQHandler(void)
 // {
-//   HAL_TIM_IRQHandler(&htim5);
+//   if(currentDot == 0)
+//     setVoltage(120);
+//   // 1. Одразу очищаємо прапор переривання!
+//   __HAL_TIM_CLEAR_IT(&htim3, TIM_IT_UPDATE); 
+//   // Або можна використати HAL_TIM_IRQHandler(&htim3);
+  
+//   while(evaluated_dots[currSection][currentDot] != 255)
+//   {
+//     setVoltage(evaluated_dots[currSection][currentDot]);
+//     currentDot++;
+//   }
+
+//   currentDot++;
+
+//   if(evaluated_dots[currSection][currentDot] == 254)
+//   {
+//     currentDot = 0;
+//     currSection ^= 0x01;
+//   }
+
+//   setVoltage(0);
+//   HAL_TIM_IRQHandler(&htim3);
 // }
+
+
+#include "general/dotsEv.h"
+#include "general/DAC.h"
+
+extern TaskHandle_t dacTaskHandle;
+
+void TIM3_IRQHandler(void)
+{
+
+  // 1. Очищаємо прапор переривання
+  __HAL_TIM_CLEAR_IT(&htim3, TIM_IT_UPDATE); 
+  
+  // 2. Сповіщаємо задачу DAC, що настав час оновити дані
+  BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+  vTaskNotifyGiveFromISR(dacTaskHandle, &xHigherPriorityTaskWoken);
+  
+  // 3. Змушуємо планувальник миттєво переключити контекст, якщо задача DAC має вищий пріоритет
+  portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+}
+
+
+
+
+void EXTI15_10_IRQHandler(void)
+{
+  if (__HAL_GPIO_EXTI_GET_IT(XPT2046_IRQ_Pin) != RESET)
+  {
+    //clear stm flag
+    __HAL_GPIO_EXTI_CLEAR_IT(XPT2046_IRQ_Pin);
+    touch_flag = 1; 
+  }
+  
+}
+
+void EXTI3_IRQHandler(void)
+{
+  sync_flag = 1;
+  __HAL_GPIO_EXTI_CLEAR_IT(_FRONT_SYNC_IRQ_PIN);
+}
 
 /******************************************************************************/
 /* STM32F4xx Peripheral Interrupt Handlers                                    */

@@ -21,9 +21,7 @@
 #ifndef __STM32F4xx_IT_H
 #define __STM32F4xx_IT_H
 
-#ifdef __cplusplus
- extern "C" {
-#endif
+#include <stdint.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -59,9 +57,5 @@ void TIM5_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif /* __STM32F4xx_IT_H */

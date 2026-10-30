@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named stm32f4_template.elf
+# Target rules for targets named OscllscDrwr_firm.elf
 
 # Build rule for target.
-stm32f4_template.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stm32f4_template.elf
-.PHONY : stm32f4_template.elf
+OscllscDrwr_firm.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OscllscDrwr_firm.elf
+.PHONY : OscllscDrwr_firm.elf
 
 # fast build rule for target.
-stm32f4_template.elf/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/build
-.PHONY : stm32f4_template.elf/fast
+OscllscDrwr_firm.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/build
+.PHONY : OscllscDrwr_firm.elf/fast
 
 #=============================================================================
 # Target rules for targets named flash
@@ -142,12 +142,108 @@ flash/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/flash.dir/build.make CMakeFiles/flash.dir/build
 .PHONY : flash/fast
 
+Drivers/Fonts/Fonts.obj: Drivers/Fonts/Fonts.c.obj
+.PHONY : Drivers/Fonts/Fonts.obj
+
+# target to build an object file
+Drivers/Fonts/Fonts.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/Fonts/Fonts.c.obj
+.PHONY : Drivers/Fonts/Fonts.c.obj
+
+Drivers/Fonts/Fonts.i: Drivers/Fonts/Fonts.c.i
+.PHONY : Drivers/Fonts/Fonts.i
+
+# target to preprocess a source file
+Drivers/Fonts/Fonts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/Fonts/Fonts.c.i
+.PHONY : Drivers/Fonts/Fonts.c.i
+
+Drivers/Fonts/Fonts.s: Drivers/Fonts/Fonts.c.s
+.PHONY : Drivers/Fonts/Fonts.s
+
+# target to generate assembly for a file
+Drivers/Fonts/Fonts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/Fonts/Fonts.c.s
+.PHONY : Drivers/Fonts/Fonts.c.s
+
+Drivers/LCD/lcd_driver.obj: Drivers/LCD/lcd_driver.c.obj
+.PHONY : Drivers/LCD/lcd_driver.obj
+
+# target to build an object file
+Drivers/LCD/lcd_driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/LCD/lcd_driver.c.obj
+.PHONY : Drivers/LCD/lcd_driver.c.obj
+
+Drivers/LCD/lcd_driver.i: Drivers/LCD/lcd_driver.c.i
+.PHONY : Drivers/LCD/lcd_driver.i
+
+# target to preprocess a source file
+Drivers/LCD/lcd_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/LCD/lcd_driver.c.i
+.PHONY : Drivers/LCD/lcd_driver.c.i
+
+Drivers/LCD/lcd_driver.s: Drivers/LCD/lcd_driver.c.s
+.PHONY : Drivers/LCD/lcd_driver.s
+
+# target to generate assembly for a file
+Drivers/LCD/lcd_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/LCD/lcd_driver.c.s
+.PHONY : Drivers/LCD/lcd_driver.c.s
+
+Drivers/Touch/Touch.obj: Drivers/Touch/Touch.c.obj
+.PHONY : Drivers/Touch/Touch.obj
+
+# target to build an object file
+Drivers/Touch/Touch.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/Touch/Touch.c.obj
+.PHONY : Drivers/Touch/Touch.c.obj
+
+Drivers/Touch/Touch.i: Drivers/Touch/Touch.c.i
+.PHONY : Drivers/Touch/Touch.i
+
+# target to preprocess a source file
+Drivers/Touch/Touch.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/Touch/Touch.c.i
+.PHONY : Drivers/Touch/Touch.c.i
+
+Drivers/Touch/Touch.s: Drivers/Touch/Touch.c.s
+.PHONY : Drivers/Touch/Touch.s
+
+# target to generate assembly for a file
+Drivers/Touch/Touch.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/Touch/Touch.c.s
+.PHONY : Drivers/Touch/Touch.c.s
+
+Drivers/XPT2046/XPT2046.obj: Drivers/XPT2046/XPT2046.c.obj
+.PHONY : Drivers/XPT2046/XPT2046.obj
+
+# target to build an object file
+Drivers/XPT2046/XPT2046.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/XPT2046/XPT2046.c.obj
+.PHONY : Drivers/XPT2046/XPT2046.c.obj
+
+Drivers/XPT2046/XPT2046.i: Drivers/XPT2046/XPT2046.c.i
+.PHONY : Drivers/XPT2046/XPT2046.i
+
+# target to preprocess a source file
+Drivers/XPT2046/XPT2046.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/XPT2046/XPT2046.c.i
+.PHONY : Drivers/XPT2046/XPT2046.c.i
+
+Drivers/XPT2046/XPT2046.s: Drivers/XPT2046/XPT2046.c.s
+.PHONY : Drivers/XPT2046/XPT2046.s
+
+# target to generate assembly for a file
+Drivers/XPT2046/XPT2046.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/Drivers/XPT2046/XPT2046.c.s
+.PHONY : Drivers/XPT2046/XPT2046.c.s
+
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.i
@@ -155,7 +251,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_c
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.s
@@ -163,7 +259,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_c
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.obj
@@ -171,7 +267,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_e
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.i
@@ -179,7 +275,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_e
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.s
@@ -187,7 +283,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_e
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
@@ -195,7 +291,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj: E_/
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i
@@ -203,7 +299,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.i: E_/li
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s
@@ -211,7 +307,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.s: E_/li
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
@@ -219,7 +315,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i
@@ -227,7 +323,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s
@@ -235,7 +331,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
@@ -243,7 +339,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i
@@ -251,7 +347,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s
@@ -259,7 +355,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
@@ -267,7 +363,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i
@@ -275,7 +371,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.s
@@ -283,7 +379,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj
@@ -291,7 +387,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.i
@@ -299,7 +395,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.s
@@ -307,7 +403,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
@@ -315,7 +411,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i
@@ -323,7 +419,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.s
@@ -331,7 +427,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
@@ -339,7 +435,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i
@@ -347,7 +443,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.s
@@ -355,7 +451,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj
@@ -363,7 +459,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.i
@@ -371,7 +467,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.s
@@ -379,7 +475,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj
@@ -387,7 +483,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.i
@@ -395,7 +491,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.s
@@ -403,7 +499,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
@@ -411,7 +507,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.i
@@ -419,7 +515,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.s
@@ -427,7 +523,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
@@ -435,7 +531,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.i
@@ -443,7 +539,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.s
@@ -451,7 +547,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj
@@ -459,7 +555,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.i
@@ -467,7 +563,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.s
@@ -475,7 +571,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj
@@ -483,7 +579,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.i
@@ -491,7 +587,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.s
@@ -499,7 +595,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj
@@ -507,7 +603,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.ob
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.i
@@ -515,7 +611,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.i:
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.s
@@ -523,7 +619,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.s:
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
@@ -531,7 +627,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i
@@ -539,7 +635,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s
@@ -547,7 +643,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj
@@ -555,7 +651,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.ob
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.i
@@ -563,7 +659,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.i:
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.s
@@ -571,7 +667,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.s:
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
@@ -579,7 +675,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i
@@ -587,7 +683,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.s
@@ -595,7 +691,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj
@@ -603,7 +699,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.i
@@ -611,7 +707,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.s
@@ -619,7 +715,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
@@ -627,7 +723,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.i
@@ -635,7 +731,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.s
@@ -643,7 +739,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
@@ -651,7 +747,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i
@@ -659,7 +755,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.s
@@ -667,7 +763,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
@@ -675,7 +771,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.ob
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i
@@ -683,7 +779,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.i:
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.s
@@ -691,7 +787,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.s:
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
@@ -699,7 +795,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i
@@ -707,7 +803,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.s
@@ -715,7 +811,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
@@ -723,7 +819,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ra
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i
@@ -731,7 +827,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ra
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.s
@@ -739,7 +835,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ra
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj
@@ -747,7 +843,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.i
@@ -755,7 +851,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.s
@@ -763,7 +859,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj
@@ -771,7 +867,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_e
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.i
@@ -779,7 +875,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_e
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.s
@@ -787,7 +883,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_e
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj
@@ -795,7 +891,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.i
@@ -803,7 +899,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.s
@@ -811,7 +907,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj
@@ -819,7 +915,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.i
@@ -827,7 +923,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.s
@@ -835,7 +931,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
@@ -843,7 +939,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i
@@ -851,7 +947,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s
@@ -859,7 +955,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj
@@ -867,7 +963,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.i
@@ -875,7 +971,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.s
@@ -883,7 +979,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj
@@ -891,7 +987,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.i
@@ -899,7 +995,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.s
@@ -907,7 +1003,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
@@ -915,7 +1011,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.i
@@ -923,7 +1019,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.s
@@ -931,7 +1027,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
@@ -939,7 +1035,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i
@@ -947,7 +1043,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s
@@ -955,7 +1051,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
@@ -963,7 +1059,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i
@@ -971,7 +1067,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.s
@@ -979,7 +1075,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj
@@ -987,7 +1083,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.i
@@ -995,7 +1091,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.s
@@ -1003,7 +1099,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj
@@ -1011,7 +1107,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.i
@@ -1019,7 +1115,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.s
@@ -1027,7 +1123,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj
@@ -1035,7 +1131,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.i
@@ -1043,7 +1139,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.s
@@ -1051,7 +1147,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj
@@ -1059,7 +1155,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.i
@@ -1067,7 +1163,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.s
@@ -1075,7 +1171,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj
@@ -1083,7 +1179,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.ob
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.i
@@ -1091,7 +1187,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.i:
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.s
@@ -1099,7 +1195,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.s:
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj
@@ -1107,7 +1203,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.i
@@ -1115,7 +1211,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.s
@@ -1123,7 +1219,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj
@@ -1131,7 +1227,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.i
@@ -1139,7 +1235,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.s
@@ -1147,7 +1243,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj
@@ -1155,7 +1251,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.i
@@ -1163,7 +1259,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.s
@@ -1171,7 +1267,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.obj
@@ -1179,7 +1275,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_temp
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.i
@@ -1187,7 +1283,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_temp
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.s
@@ -1195,7 +1291,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_temp
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj
@@ -1203,7 +1299,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.i
@@ -1211,7 +1307,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.s
@@ -1219,7 +1315,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj
@@ -1227,7 +1323,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.i
@@ -1235,7 +1331,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.s
@@ -1243,7 +1339,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj
@@ -1251,7 +1347,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.i
@@ -1259,7 +1355,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.s
@@ -1267,7 +1363,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
@@ -1275,7 +1371,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i
@@ -1283,7 +1379,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.s
@@ -1291,7 +1387,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
@@ -1299,7 +1395,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i
@@ -1307,7 +1403,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.s
@@ -1315,7 +1411,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
@@ -1323,7 +1419,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i
@@ -1331,7 +1427,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.s
@@ -1339,7 +1435,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
@@ -1347,7 +1443,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i
@@ -1355,7 +1451,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.s
@@ -1363,7 +1459,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj
@@ -1371,7 +1467,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.i
@@ -1379,7 +1475,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.s
@@ -1387,7 +1483,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -1395,7 +1491,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i
@@ -1403,7 +1499,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.s
@@ -1411,7 +1507,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
@@ -1419,7 +1515,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i
@@ -1427,7 +1523,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
@@ -1435,7 +1531,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj
@@ -1443,7 +1539,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i
@@ -1451,7 +1547,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.s
@@ -1459,7 +1555,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
@@ -1467,7 +1563,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i
@@ -1475,7 +1571,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.s
@@ -1483,7 +1579,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj
@@ -1491,7 +1587,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i
@@ -1499,7 +1595,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.s
@@ -1507,7 +1603,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj
@@ -1515,7 +1611,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.i
@@ -1523,7 +1619,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.s
@@ -1531,7 +1627,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj
@@ -1539,7 +1635,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.i
@@ -1547,7 +1643,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.s
@@ -1555,7 +1651,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj
@@ -1563,7 +1659,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.i
@@ -1571,7 +1667,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.s
@@ -1579,7 +1675,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj
@@ -1587,7 +1683,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.ob
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.i
@@ -1595,7 +1691,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.i:
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.s
@@ -1603,7 +1699,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.s:
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj
@@ -1611,7 +1707,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcar
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.i
@@ -1619,7 +1715,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcar
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.s
@@ -1627,7 +1723,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcar
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj
@@ -1635,7 +1731,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.ob
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.i
@@ -1643,7 +1739,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.i:
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.s
@@ -1651,7 +1747,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.s:
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj
@@ -1659,7 +1755,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.i
@@ -1667,7 +1763,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.s
@@ -1675,7 +1771,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
@@ -1683,7 +1779,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
@@ -1691,7 +1787,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
@@ -1699,7 +1795,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj
@@ -1707,7 +1803,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.i
@@ -1715,7 +1811,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.s
@@ -1723,7 +1819,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
@@ -1731,7 +1827,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i
@@ -1739,7 +1835,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.s
@@ -1747,7 +1843,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
@@ -1755,7 +1851,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i
@@ -1763,7 +1859,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.s
@@ -1771,7 +1867,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
@@ -1779,7 +1875,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i
@@ -1787,7 +1883,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
@@ -1795,7 +1891,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj
@@ -1803,7 +1899,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.ob
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.i
@@ -1811,7 +1907,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.i:
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.s
@@ -1819,7 +1915,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.s:
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj
@@ -1827,7 +1923,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.i
@@ -1835,7 +1931,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.s
@@ -1843,7 +1939,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
@@ -1851,7 +1947,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
@@ -1859,7 +1955,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
@@ -1867,7 +1963,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj
@@ -1875,7 +1971,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.i
@@ -1883,7 +1979,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.s
@@ -1891,7 +1987,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj
@@ -1899,7 +1995,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.i
@@ -1907,7 +2003,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.s
@@ -1915,7 +2011,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj
@@ -1923,7 +2019,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i
@@ -1931,7 +2027,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.s
@@ -1939,7 +2035,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj
@@ -1947,7 +2043,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.i
@@ -1955,7 +2051,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.s
@@ -1963,7 +2059,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj
@@ -1971,7 +2067,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i
@@ -1979,7 +2075,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.s
@@ -1987,7 +2083,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj
@@ -1995,7 +2091,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.i
@@ -2003,7 +2099,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.s
@@ -2011,7 +2107,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj
@@ -2019,7 +2115,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.ob
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.i
@@ -2027,7 +2123,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.i:
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.s
@@ -2035,7 +2131,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.s:
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj
@@ -2043,7 +2139,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.i
@@ -2051,7 +2147,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.s
@@ -2059,7 +2155,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj
@@ -2067,7 +2163,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.obj:
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i
@@ -2075,7 +2171,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.i: E
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.s
@@ -2083,7 +2179,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.s: E
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj
@@ -2091,7 +2187,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.i
@@ -2099,7 +2195,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.s
@@ -2107,7 +2203,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj
@@ -2115,7 +2211,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.i
@@ -2123,7 +2219,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.s
@@ -2131,7 +2227,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj
@@ -2139,7 +2235,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.i
@@ -2147,7 +2243,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.s
@@ -2155,7 +2251,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj
@@ -2163,7 +2259,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i
@@ -2171,7 +2267,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.s
@@ -2179,7 +2275,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj
@@ -2187,7 +2283,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.i
@@ -2195,7 +2291,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.s
@@ -2203,7 +2299,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj
@@ -2211,7 +2307,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.i
@@ -2219,7 +2315,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.s
@@ -2227,7 +2323,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj
@@ -2235,7 +2331,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.i
@@ -2243,7 +2339,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.s
@@ -2251,7 +2347,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj
@@ -2259,7 +2355,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.i
@@ -2267,7 +2363,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.s
@@ -2275,7 +2371,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj
@@ -2283,7 +2379,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i
@@ -2291,7 +2387,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.s
@@ -2299,7 +2395,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj
@@ -2307,7 +2403,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i
@@ -2315,7 +2411,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.s
@@ -2323,7 +2419,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
@@ -2331,7 +2427,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.obj: 
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i
@@ -2339,7 +2435,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.i: E_
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.s
@@ -2347,7 +2443,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.s: E_
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.s
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.obj: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj
@@ -2355,7 +2451,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.obj
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.i: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i
@@ -2363,7 +2459,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.i: 
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i
 
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.s: E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
@@ -2371,7 +2467,7 @@ E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.s: 
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
 .PHONY : E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
@@ -2379,7 +2475,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsi
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
@@ -2387,7 +2483,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsi
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
@@ -2395,7 +2491,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsi
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj
@@ -2403,7 +2499,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.obj: E
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
@@ -2411,7 +2507,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.i: E_/
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
@@ -2419,7 +2515,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.s: E_/
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj
@@ -2427,7 +2523,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.ob
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
@@ -2435,7 +2531,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.i:
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
@@ -2443,7 +2539,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.s:
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
@@ -2451,7 +2547,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.obj: E_/li
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.i
@@ -2459,7 +2555,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.i: E_/libr
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.s
@@ -2467,7 +2563,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.s: E_/libr
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/list.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
@@ -2475,7 +2571,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/AR
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i
@@ -2483,7 +2579,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/AR
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.s
@@ -2491,7 +2587,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/AR
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
@@ -2499,7 +2595,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMan
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
@@ -2507,7 +2603,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMan
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
@@ -2515,7 +2611,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMan
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
@@ -2523,7 +2619,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.obj: E_/l
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
@@ -2531,7 +2627,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.i: E_/lib
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
@@ -2539,7 +2635,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.s: E_/lib
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
@@ -2547,7 +2643,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
@@ -2555,7 +2651,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.i
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
@@ -2563,7 +2659,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.s
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
@@ -2571,7 +2667,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.obj: E_/l
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
@@ -2579,7 +2675,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.i: E_/lib
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
@@ -2587,7 +2683,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.s: E_/lib
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.obj: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
@@ -2595,7 +2691,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.obj: E_/
 
 # target to build an object file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.i: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
@@ -2603,7 +2699,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.i: E_/li
 
 # target to preprocess a source file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
 
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.s: E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
@@ -2611,7 +2707,7 @@ E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.s: E_/li
 
 # target to generate assembly for a file
 E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : E_/libraries/STM32CubeF4/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
 src/Error_Handler.obj: src/Error_Handler.c.obj
@@ -2619,7 +2715,7 @@ src/Error_Handler.obj: src/Error_Handler.c.obj
 
 # target to build an object file
 src/Error_Handler.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/Error_Handler.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/Error_Handler.c.obj
 .PHONY : src/Error_Handler.c.obj
 
 src/Error_Handler.i: src/Error_Handler.c.i
@@ -2627,7 +2723,7 @@ src/Error_Handler.i: src/Error_Handler.c.i
 
 # target to preprocess a source file
 src/Error_Handler.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/Error_Handler.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/Error_Handler.c.i
 .PHONY : src/Error_Handler.c.i
 
 src/Error_Handler.s: src/Error_Handler.c.s
@@ -2635,15 +2731,279 @@ src/Error_Handler.s: src/Error_Handler.c.s
 
 # target to generate assembly for a file
 src/Error_Handler.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/Error_Handler.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/Error_Handler.c.s
 .PHONY : src/Error_Handler.c.s
+
+src/TIM/TIM3.obj: src/TIM/TIM3.c.obj
+.PHONY : src/TIM/TIM3.obj
+
+# target to build an object file
+src/TIM/TIM3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/TIM/TIM3.c.obj
+.PHONY : src/TIM/TIM3.c.obj
+
+src/TIM/TIM3.i: src/TIM/TIM3.c.i
+.PHONY : src/TIM/TIM3.i
+
+# target to preprocess a source file
+src/TIM/TIM3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/TIM/TIM3.c.i
+.PHONY : src/TIM/TIM3.c.i
+
+src/TIM/TIM3.s: src/TIM/TIM3.c.s
+.PHONY : src/TIM/TIM3.s
+
+# target to generate assembly for a file
+src/TIM/TIM3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/TIM/TIM3.c.s
+.PHONY : src/TIM/TIM3.c.s
+
+src/TIM/TIM5.obj: src/TIM/TIM5.c.obj
+.PHONY : src/TIM/TIM5.obj
+
+# target to build an object file
+src/TIM/TIM5.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/TIM/TIM5.c.obj
+.PHONY : src/TIM/TIM5.c.obj
+
+src/TIM/TIM5.i: src/TIM/TIM5.c.i
+.PHONY : src/TIM/TIM5.i
+
+# target to preprocess a source file
+src/TIM/TIM5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/TIM/TIM5.c.i
+.PHONY : src/TIM/TIM5.c.i
+
+src/TIM/TIM5.s: src/TIM/TIM5.c.s
+.PHONY : src/TIM/TIM5.s
+
+# target to generate assembly for a file
+src/TIM/TIM5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/TIM/TIM5.c.s
+.PHONY : src/TIM/TIM5.c.s
+
+src/comm/i2c.obj: src/comm/i2c.c.obj
+.PHONY : src/comm/i2c.obj
+
+# target to build an object file
+src/comm/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/comm/i2c.c.obj
+.PHONY : src/comm/i2c.c.obj
+
+src/comm/i2c.i: src/comm/i2c.c.i
+.PHONY : src/comm/i2c.i
+
+# target to preprocess a source file
+src/comm/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/comm/i2c.c.i
+.PHONY : src/comm/i2c.c.i
+
+src/comm/i2c.s: src/comm/i2c.c.s
+.PHONY : src/comm/i2c.s
+
+# target to generate assembly for a file
+src/comm/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/comm/i2c.c.s
+.PHONY : src/comm/i2c.c.s
+
+src/comm/spi.obj: src/comm/spi.c.obj
+.PHONY : src/comm/spi.obj
+
+# target to build an object file
+src/comm/spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/comm/spi.c.obj
+.PHONY : src/comm/spi.c.obj
+
+src/comm/spi.i: src/comm/spi.c.i
+.PHONY : src/comm/spi.i
+
+# target to preprocess a source file
+src/comm/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/comm/spi.c.i
+.PHONY : src/comm/spi.c.i
+
+src/comm/spi.s: src/comm/spi.c.s
+.PHONY : src/comm/spi.s
+
+# target to generate assembly for a file
+src/comm/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/comm/spi.c.s
+.PHONY : src/comm/spi.c.s
+
+src/comm/usart.obj: src/comm/usart.c.obj
+.PHONY : src/comm/usart.obj
+
+# target to build an object file
+src/comm/usart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/comm/usart.c.obj
+.PHONY : src/comm/usart.c.obj
+
+src/comm/usart.i: src/comm/usart.c.i
+.PHONY : src/comm/usart.i
+
+# target to preprocess a source file
+src/comm/usart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/comm/usart.c.i
+.PHONY : src/comm/usart.c.i
+
+src/comm/usart.s: src/comm/usart.c.s
+.PHONY : src/comm/usart.s
+
+# target to generate assembly for a file
+src/comm/usart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/comm/usart.c.s
+.PHONY : src/comm/usart.c.s
+
+src/def.obj: src/def.c.obj
+.PHONY : src/def.obj
+
+# target to build an object file
+src/def.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/def.c.obj
+.PHONY : src/def.c.obj
+
+src/def.i: src/def.c.i
+.PHONY : src/def.i
+
+# target to preprocess a source file
+src/def.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/def.c.i
+.PHONY : src/def.c.i
+
+src/def.s: src/def.c.s
+.PHONY : src/def.s
+
+# target to generate assembly for a file
+src/def.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/def.c.s
+.PHONY : src/def.c.s
+
+src/general/DAC.obj: src/general/DAC.c.obj
+.PHONY : src/general/DAC.obj
+
+# target to build an object file
+src/general/DAC.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/DAC.c.obj
+.PHONY : src/general/DAC.c.obj
+
+src/general/DAC.i: src/general/DAC.c.i
+.PHONY : src/general/DAC.i
+
+# target to preprocess a source file
+src/general/DAC.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/DAC.c.i
+.PHONY : src/general/DAC.c.i
+
+src/general/DAC.s: src/general/DAC.c.s
+.PHONY : src/general/DAC.s
+
+# target to generate assembly for a file
+src/general/DAC.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/DAC.c.s
+.PHONY : src/general/DAC.c.s
+
+src/general/dotsEv.obj: src/general/dotsEv.c.obj
+.PHONY : src/general/dotsEv.obj
+
+# target to build an object file
+src/general/dotsEv.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/dotsEv.c.obj
+.PHONY : src/general/dotsEv.c.obj
+
+src/general/dotsEv.i: src/general/dotsEv.c.i
+.PHONY : src/general/dotsEv.i
+
+# target to preprocess a source file
+src/general/dotsEv.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/dotsEv.c.i
+.PHONY : src/general/dotsEv.c.i
+
+src/general/dotsEv.s: src/general/dotsEv.c.s
+.PHONY : src/general/dotsEv.s
+
+# target to generate assembly for a file
+src/general/dotsEv.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/dotsEv.c.s
+.PHONY : src/general/dotsEv.c.s
+
+src/general/menu.obj: src/general/menu.c.obj
+.PHONY : src/general/menu.obj
+
+# target to build an object file
+src/general/menu.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/menu.c.obj
+.PHONY : src/general/menu.c.obj
+
+src/general/menu.i: src/general/menu.c.i
+.PHONY : src/general/menu.i
+
+# target to preprocess a source file
+src/general/menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/menu.c.i
+.PHONY : src/general/menu.c.i
+
+src/general/menu.s: src/general/menu.c.s
+.PHONY : src/general/menu.s
+
+# target to generate assembly for a file
+src/general/menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/menu.c.s
+.PHONY : src/general/menu.c.s
+
+src/general/tasks.obj: src/general/tasks.c.obj
+.PHONY : src/general/tasks.obj
+
+# target to build an object file
+src/general/tasks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/tasks.c.obj
+.PHONY : src/general/tasks.c.obj
+
+src/general/tasks.i: src/general/tasks.c.i
+.PHONY : src/general/tasks.i
+
+# target to preprocess a source file
+src/general/tasks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/tasks.c.i
+.PHONY : src/general/tasks.c.i
+
+src/general/tasks.s: src/general/tasks.c.s
+.PHONY : src/general/tasks.s
+
+# target to generate assembly for a file
+src/general/tasks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/tasks.c.s
+.PHONY : src/general/tasks.c.s
+
+src/general/touchM.obj: src/general/touchM.c.obj
+.PHONY : src/general/touchM.obj
+
+# target to build an object file
+src/general/touchM.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/touchM.c.obj
+.PHONY : src/general/touchM.c.obj
+
+src/general/touchM.i: src/general/touchM.c.i
+.PHONY : src/general/touchM.i
+
+# target to preprocess a source file
+src/general/touchM.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/touchM.c.i
+.PHONY : src/general/touchM.c.i
+
+src/general/touchM.s: src/general/touchM.c.s
+.PHONY : src/general/touchM.s
+
+# target to generate assembly for a file
+src/general/touchM.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/general/touchM.c.s
+.PHONY : src/general/touchM.c.s
 
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
 # target to build an object file
 src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/main.c.obj
 .PHONY : src/main.c.obj
 
 src/main.i: src/main.c.i
@@ -2651,7 +3011,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -2659,7 +3019,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/stm32_assert.obj: src/stm32_assert.c.obj
@@ -2667,7 +3027,7 @@ src/stm32_assert.obj: src/stm32_assert.c.obj
 
 # target to build an object file
 src/stm32_assert.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stm32_assert.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stm32_assert.c.obj
 .PHONY : src/stm32_assert.c.obj
 
 src/stm32_assert.i: src/stm32_assert.c.i
@@ -2675,7 +3035,7 @@ src/stm32_assert.i: src/stm32_assert.c.i
 
 # target to preprocess a source file
 src/stm32_assert.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stm32_assert.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stm32_assert.c.i
 .PHONY : src/stm32_assert.c.i
 
 src/stm32_assert.s: src/stm32_assert.c.s
@@ -2683,7 +3043,7 @@ src/stm32_assert.s: src/stm32_assert.c.s
 
 # target to generate assembly for a file
 src/stm32_assert.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stm32_assert.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stm32_assert.c.s
 .PHONY : src/stm32_assert.c.s
 
 src/stm32f4xx_hal_timebase_tim.obj: src/stm32f4xx_hal_timebase_tim.c.obj
@@ -2691,7 +3051,7 @@ src/stm32f4xx_hal_timebase_tim.obj: src/stm32f4xx_hal_timebase_tim.c.obj
 
 # target to build an object file
 src/stm32f4xx_hal_timebase_tim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stm32f4xx_hal_timebase_tim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stm32f4xx_hal_timebase_tim.c.obj
 .PHONY : src/stm32f4xx_hal_timebase_tim.c.obj
 
 src/stm32f4xx_hal_timebase_tim.i: src/stm32f4xx_hal_timebase_tim.c.i
@@ -2699,7 +3059,7 @@ src/stm32f4xx_hal_timebase_tim.i: src/stm32f4xx_hal_timebase_tim.c.i
 
 # target to preprocess a source file
 src/stm32f4xx_hal_timebase_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stm32f4xx_hal_timebase_tim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stm32f4xx_hal_timebase_tim.c.i
 .PHONY : src/stm32f4xx_hal_timebase_tim.c.i
 
 src/stm32f4xx_hal_timebase_tim.s: src/stm32f4xx_hal_timebase_tim.c.s
@@ -2707,7 +3067,7 @@ src/stm32f4xx_hal_timebase_tim.s: src/stm32f4xx_hal_timebase_tim.c.s
 
 # target to generate assembly for a file
 src/stm32f4xx_hal_timebase_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stm32f4xx_hal_timebase_tim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stm32f4xx_hal_timebase_tim.c.s
 .PHONY : src/stm32f4xx_hal_timebase_tim.c.s
 
 src/stm32f4xx_it.obj: src/stm32f4xx_it.c.obj
@@ -2715,7 +3075,7 @@ src/stm32f4xx_it.obj: src/stm32f4xx_it.c.obj
 
 # target to build an object file
 src/stm32f4xx_it.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stm32f4xx_it.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stm32f4xx_it.c.obj
 .PHONY : src/stm32f4xx_it.c.obj
 
 src/stm32f4xx_it.i: src/stm32f4xx_it.c.i
@@ -2723,7 +3083,7 @@ src/stm32f4xx_it.i: src/stm32f4xx_it.c.i
 
 # target to preprocess a source file
 src/stm32f4xx_it.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stm32f4xx_it.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stm32f4xx_it.c.i
 .PHONY : src/stm32f4xx_it.c.i
 
 src/stm32f4xx_it.s: src/stm32f4xx_it.c.s
@@ -2731,7 +3091,7 @@ src/stm32f4xx_it.s: src/stm32f4xx_it.c.s
 
 # target to generate assembly for a file
 src/stm32f4xx_it.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stm32f4xx_it.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stm32f4xx_it.c.s
 .PHONY : src/stm32f4xx_it.c.s
 
 src/stubs.obj: src/stubs.c.obj
@@ -2739,7 +3099,7 @@ src/stubs.obj: src/stubs.c.obj
 
 # target to build an object file
 src/stubs.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stubs.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stubs.c.obj
 .PHONY : src/stubs.c.obj
 
 src/stubs.i: src/stubs.c.i
@@ -2747,7 +3107,7 @@ src/stubs.i: src/stubs.c.i
 
 # target to preprocess a source file
 src/stubs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stubs.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stubs.c.i
 .PHONY : src/stubs.c.i
 
 src/stubs.s: src/stubs.c.s
@@ -2755,7 +3115,7 @@ src/stubs.s: src/stubs.c.s
 
 # target to generate assembly for a file
 src/stubs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/stubs.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/stubs.c.s
 .PHONY : src/stubs.c.s
 
 src/syscalls.obj: src/syscalls.c.obj
@@ -2763,7 +3123,7 @@ src/syscalls.obj: src/syscalls.c.obj
 
 # target to build an object file
 src/syscalls.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/syscalls.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/syscalls.c.obj
 .PHONY : src/syscalls.c.obj
 
 src/syscalls.i: src/syscalls.c.i
@@ -2771,7 +3131,7 @@ src/syscalls.i: src/syscalls.c.i
 
 # target to preprocess a source file
 src/syscalls.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/syscalls.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/syscalls.c.i
 .PHONY : src/syscalls.c.i
 
 src/syscalls.s: src/syscalls.c.s
@@ -2779,7 +3139,7 @@ src/syscalls.s: src/syscalls.c.s
 
 # target to generate assembly for a file
 src/syscalls.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/syscalls.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/syscalls.c.s
 .PHONY : src/syscalls.c.s
 
 src/sysmem.obj: src/sysmem.c.obj
@@ -2787,7 +3147,7 @@ src/sysmem.obj: src/sysmem.c.obj
 
 # target to build an object file
 src/sysmem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/sysmem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/sysmem.c.obj
 .PHONY : src/sysmem.c.obj
 
 src/sysmem.i: src/sysmem.c.i
@@ -2795,7 +3155,7 @@ src/sysmem.i: src/sysmem.c.i
 
 # target to preprocess a source file
 src/sysmem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/sysmem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/sysmem.c.i
 .PHONY : src/sysmem.c.i
 
 src/sysmem.s: src/sysmem.c.s
@@ -2803,7 +3163,7 @@ src/sysmem.s: src/sysmem.c.s
 
 # target to generate assembly for a file
 src/sysmem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/sysmem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/sysmem.c.s
 .PHONY : src/sysmem.c.s
 
 src/system_stm32f4xx.obj: src/system_stm32f4xx.c.obj
@@ -2811,7 +3171,7 @@ src/system_stm32f4xx.obj: src/system_stm32f4xx.c.obj
 
 # target to build an object file
 src/system_stm32f4xx.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/system_stm32f4xx.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/system_stm32f4xx.c.obj
 .PHONY : src/system_stm32f4xx.c.obj
 
 src/system_stm32f4xx.i: src/system_stm32f4xx.c.i
@@ -2819,7 +3179,7 @@ src/system_stm32f4xx.i: src/system_stm32f4xx.c.i
 
 # target to preprocess a source file
 src/system_stm32f4xx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/system_stm32f4xx.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/system_stm32f4xx.c.i
 .PHONY : src/system_stm32f4xx.c.i
 
 src/system_stm32f4xx.s: src/system_stm32f4xx.c.s
@@ -2827,7 +3187,7 @@ src/system_stm32f4xx.s: src/system_stm32f4xx.c.s
 
 # target to generate assembly for a file
 src/system_stm32f4xx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/src/system_stm32f4xx.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/src/system_stm32f4xx.c.s
 .PHONY : src/system_stm32f4xx.c.s
 
 startup_stm.obj: startup_stm.s.obj
@@ -2835,7 +3195,7 @@ startup_stm.obj: startup_stm.s.obj
 
 # target to build an object file
 startup_stm.s.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32f4_template.elf.dir/build.make CMakeFiles/stm32f4_template.elf.dir/startup_stm.s.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OscllscDrwr_firm.elf.dir/build.make CMakeFiles/OscllscDrwr_firm.elf.dir/startup_stm.s.obj
 .PHONY : startup_stm.s.obj
 
 # Help Target
@@ -2847,7 +3207,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... flash"
-	@echo "... stm32f4_template.elf"
+	@echo "... OscllscDrwr_firm.elf"
+	@echo "... Drivers/Fonts/Fonts.obj"
+	@echo "... Drivers/Fonts/Fonts.i"
+	@echo "... Drivers/Fonts/Fonts.s"
+	@echo "... Drivers/LCD/lcd_driver.obj"
+	@echo "... Drivers/LCD/lcd_driver.i"
+	@echo "... Drivers/LCD/lcd_driver.s"
+	@echo "... Drivers/Touch/Touch.obj"
+	@echo "... Drivers/Touch/Touch.i"
+	@echo "... Drivers/Touch/Touch.s"
+	@echo "... Drivers/XPT2046/XPT2046.obj"
+	@echo "... Drivers/XPT2046/XPT2046.i"
+	@echo "... Drivers/XPT2046/XPT2046.s"
 	@echo "... E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.obj"
 	@echo "... E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.i"
 	@echo "... E_/libraries/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.s"
@@ -3160,6 +3532,39 @@ help:
 	@echo "... src/Error_Handler.obj"
 	@echo "... src/Error_Handler.i"
 	@echo "... src/Error_Handler.s"
+	@echo "... src/TIM/TIM3.obj"
+	@echo "... src/TIM/TIM3.i"
+	@echo "... src/TIM/TIM3.s"
+	@echo "... src/TIM/TIM5.obj"
+	@echo "... src/TIM/TIM5.i"
+	@echo "... src/TIM/TIM5.s"
+	@echo "... src/comm/i2c.obj"
+	@echo "... src/comm/i2c.i"
+	@echo "... src/comm/i2c.s"
+	@echo "... src/comm/spi.obj"
+	@echo "... src/comm/spi.i"
+	@echo "... src/comm/spi.s"
+	@echo "... src/comm/usart.obj"
+	@echo "... src/comm/usart.i"
+	@echo "... src/comm/usart.s"
+	@echo "... src/def.obj"
+	@echo "... src/def.i"
+	@echo "... src/def.s"
+	@echo "... src/general/DAC.obj"
+	@echo "... src/general/DAC.i"
+	@echo "... src/general/DAC.s"
+	@echo "... src/general/dotsEv.obj"
+	@echo "... src/general/dotsEv.i"
+	@echo "... src/general/dotsEv.s"
+	@echo "... src/general/menu.obj"
+	@echo "... src/general/menu.i"
+	@echo "... src/general/menu.s"
+	@echo "... src/general/tasks.obj"
+	@echo "... src/general/tasks.i"
+	@echo "... src/general/tasks.s"
+	@echo "... src/general/touchM.obj"
+	@echo "... src/general/touchM.i"
+	@echo "... src/general/touchM.s"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

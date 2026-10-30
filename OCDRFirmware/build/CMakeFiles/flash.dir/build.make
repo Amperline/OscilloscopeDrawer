@@ -67,8 +67,8 @@ include CMakeFiles/flash.dir/compiler_depend.make
 include CMakeFiles/flash.dir/progress.make
 
 CMakeFiles/flash:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Flashing stm32f4_template to STM32"
-	STM32_Programmer_CLI.exe -c port=SWD -d E:/Projects/OscilocopeDrawer/OCDRFirmware/build/stm32f4_template.hex -rst
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=E:/Projects/OscilocopeDrawer/OCDRFirmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Flashing OscllscDrwr_firm to STM32"
+	STM32_Programmer_CLI.exe -c port=SWD -d E:/Projects/OscilocopeDrawer/OCDRFirmware/build/OscllscDrwr_firm.hex -rst
 
 CMakeFiles/flash.dir/codegen:
 .PHONY : CMakeFiles/flash.dir/codegen
